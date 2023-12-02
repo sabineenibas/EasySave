@@ -14,3 +14,5 @@ C:\Users\Pcnet\source\repos\EasySaveG6\obj\Debug\netcoreapp3.1\EasySaveG6.csproj
 C:\Users\Pcnet\source\repos\EasySaveG6\obj\Debug\netcoreapp3.1\EasySaveG6.dll
 C:\Users\Pcnet\source\repos\EasySaveG6\obj\Debug\netcoreapp3.1\EasySaveG6.pdb
 C:\Users\Pcnet\source\repos\EasySaveG6\obj\Debug\netcoreapp3.1\EasySaveG6.genruntimeconfig.cache
+C:\Users\PC\Source\Repos\EasySavee\obj\Debug\netcoreapp3.1\EasySaveG6.dll
+C:\Users\PC\Source\Repos\EasySavee\obj\Debug\netcoreapp3.1\EasySaveG6.pdb
