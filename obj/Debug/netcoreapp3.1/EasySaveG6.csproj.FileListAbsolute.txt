@@ -1,0 +1,16 @@
+C:\Users\Pcnet\source\repos\EasySaveG6\obj\Debug\netcoreapp3.1\EasySaveG6.csproj.AssemblyReference.cache
+C:\Users\Pcnet\source\repos\EasySaveG6\obj\Debug\netcoreapp3.1\EasySaveG6.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Pcnet\source\repos\EasySaveG6\obj\Debug\netcoreapp3.1\EasySaveG6.AssemblyInfoInputs.cache
+C:\Users\Pcnet\source\repos\EasySaveG6\obj\Debug\netcoreapp3.1\EasySaveG6.AssemblyInfo.cs
+C:\Users\Pcnet\source\repos\EasySaveG6\obj\Debug\netcoreapp3.1\EasySaveG6.csproj.CoreCompileInputs.cache
+C:\Users\Pcnet\source\repos\EasySaveG6\bin\Debug\netcoreapp3.1\EasySaveG6.exe
+C:\Users\Pcnet\source\repos\EasySaveG6\bin\Debug\netcoreapp3.1\EasySaveG6.deps.json
+C:\Users\Pcnet\source\repos\EasySaveG6\bin\Debug\netcoreapp3.1\EasySaveG6.runtimeconfig.json
+C:\Users\Pcnet\source\repos\EasySaveG6\bin\Debug\netcoreapp3.1\EasySaveG6.runtimeconfig.dev.json
+C:\Users\Pcnet\source\repos\EasySaveG6\bin\Debug\netcoreapp3.1\EasySaveG6.dll
+C:\Users\Pcnet\source\repos\EasySaveG6\bin\Debug\netcoreapp3.1\EasySaveG6.pdb
+C:\Users\Pcnet\source\repos\EasySaveG6\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\Pcnet\source\repos\EasySaveG6\obj\Debug\netcoreapp3.1\EasySaveG6.csproj.CopyComplete
+C:\Users\Pcnet\source\repos\EasySaveG6\obj\Debug\netcoreapp3.1\EasySaveG6.dll
+C:\Users\Pcnet\source\repos\EasySaveG6\obj\Debug\netcoreapp3.1\EasySaveG6.pdb
+C:\Users\Pcnet\source\repos\EasySaveG6\obj\Debug\netcoreapp3.1\EasySaveG6.genruntimeconfig.cache
