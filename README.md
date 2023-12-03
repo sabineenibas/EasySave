@@ -35,5 +35,14 @@ Features:
 
 3. The user has the choice to create or execute a backup job.
 ![1](https://github.com/sabineenibas/EasySave/assets/114827482/c34aeacb-6213-4cab-bd37-192ed3c242c6)
+![2](https://github.com/sabineenibas/EasySave/assets/114827482/cf9c4427-a088-4efe-a587-f41b5b4cd79e)
 
+- Create a backup job: Entering the number 1 means that you are going to add a backup job, you will enter the name of your backup job, the source path from where you want to retrieve the folder to be backed up and also specify the path of the target folder. After entering this information, you will have to choose whether you want to have a full or differential backup.  ! A reminder !: 
+
+- Full backup: Copies the entire file and folder each time a full backup is performed.
+
+- Differential backup: Only the files modified since the last full backup are backed up. The backup job is now created.
+![3](https://github.com/sabineenibas/EasySave/assets/114827482/43eaef72-9b09-4744-a869-b22b2a720c60)
+
+After answering to all this question, you can quit the application by clicking esc
 
