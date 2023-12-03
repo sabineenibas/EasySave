@@ -178,12 +178,6 @@ namespace EasySaveG6.ViewModel
             var ccount = fRead.Split("backupName").Length;
             return ccount;
         }
-
-
-
-
-
-
     }
 
 }

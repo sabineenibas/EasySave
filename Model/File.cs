@@ -7,7 +7,7 @@ using Newtonsoft.Json;
 
 namespace EasySaveG6.Model
 {
-    class File
+    public class File
     {
         // initialization of the varaibles
         public string backupName { get; set; }

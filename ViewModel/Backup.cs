@@ -5,7 +5,7 @@ using System.IO;
 using System.Threading;
 using System.Diagnostics;
 using System.Net.NetworkInformation;
-using EasySaveG6.Model;// 
+using EasySaveG6.Model;
 
 namespace EasySaveG6.ViewModel
 {
@@ -38,9 +38,6 @@ namespace EasySaveG6.ViewModel
         public void backupUserChoice()
         {
 
-
-
-
             if (type == "Full")
             {
                 Full();
@@ -52,10 +49,14 @@ namespace EasySaveG6.ViewModel
         }
         public void Full()
         {
-            Log str = new Log(backupName, type);
+            Log str = Log.Instance;
             Status status = new Status(backupName, sourcePath, destinationPath, type);
             EasySaveG6.Model.File fileS = new Status(@"");
-            EasySaveG6.Model.File fileC = new Log(@"..\..\..\Save\Log.txt");
+            EasySaveG6.Model.File fileC = Log.Instance;
+            fileC.backupName = backupName;
+            fileC.sourcePath = sourcePath;
+            fileC.destinationPath = destination;
+            fileC.type = type;
 
 
             try
@@ -87,10 +88,14 @@ namespace EasySaveG6.ViewModel
         {
             DateTime lastModified;
             DateTime lastModified2;
-            Log str = new Log(backupName, type);
+            Log str = Log.Instance;
             Status status = new Status(backupName, sourcePath, destinationPath, type);
+            EasySaveG6.Model.File fileC = Log.Instance;
+            fileC.backupName = backupName;
+            fileC.sourcePath = sourcePath;
+            fileC.destinationPath = destination;
+            fileC.type = type;
             EasySaveG6.Model.File fileS = new Status(@"..\..\..\Save\Status.txt");
-            EasySaveG6.Model.File fileC = new Log(@"..\..\..\Save\Log.txt");
 
             var i = 0;
 
@@ -140,8 +145,6 @@ namespace EasySaveG6.ViewModel
                     i++;
 
                 }
-
-
 
             }
 

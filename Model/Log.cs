@@ -7,43 +7,44 @@ using System.Diagnostics; // Used to calculate time
 using Newtonsoft.Json; // Used to parse Json data 
 using System.Linq;
 
+
+using System;
+
 namespace EasySaveG6.Model
 {
-    class Log : File // Log inherits from File 
+    public class Log : File
     {
-        // Initializing variables 
-        public TimeSpan timeTrensfertFile { get; set; }
+        private static Log instance;
+        private static readonly object lockObject = new object();
         public double fileSize { get; set; }
+        public TimeSpan timeTrensfertFile { get; set; }
 
-        public Log() // Log class constructor 
+        private Log()
         {
-            
+            // Private constructor to prevent instantiation outside of this class.
         }
 
-        
-        public Log(string backupName, string type)
+        public static Log Instance
         {
-            this.backupName = backupName;
-            this.type = type;
+            get
+            {
+                if (instance == null)
+                {
+                    lock (lockObject)
+                    {
+                        if (instance == null)
+                        {
+                            instance = new Log();
+                        }
+                    }
+                }
+                return instance;
+            }
         }
 
-        
-        public Log(string backupName)
+        public void LogMessage(string message)
         {
-            this.backupName = backupName;
-        }
-
-       
-        public Log(string backupName, string type, string sourcePath, string destinationPath)
-        {
-            this.backupName = backupName;
-            this.sourcePath = sourcePath;
-            this.destinationPath = destinationPath;
-            this.type = type;
-
-           
-            fileSize = fileSize;
-            timeTrensfertFile = timeTrensfertFile;
+            Console.WriteLine(message);
         }
 
         // Convert the log file to JSON format
@@ -85,4 +86,5 @@ namespace EasySaveG6.Model
             this.timeTrensfertFile = timeTrensfertFile;
         }
     }
+
 }

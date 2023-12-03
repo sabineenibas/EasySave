@@ -1,0 +1,25 @@
+[  
+  {
+    "stateSave": "ACTIVE",
+    "totalFileSize": 8580,
+    "fileLeftSize": 8580,
+    "totalFile": 5,
+    "backupName": "leryem",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc2",
+    "timestamp": "2023-12-02 10:30:33",
+    "type": "Differential"
+  }
+, 
+  {
+    "stateSave": "ACTIVE",
+    "totalFileSize": 8580,
+    "fileLeftSize": 8580,
+    "totalFile": 5,
+    "backupName": "sabine",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc2",
+    "timestamp": "2023-12-02 02:19:14",
+    "type": "Full"
+  }
+]
