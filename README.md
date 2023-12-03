@@ -28,5 +28,12 @@ Features:
 - Generate log files and status files
 - Use of our program by English and French speaking users
 
+#User guide : 
+1. When launching our software a display of the name of our software will appear.
+
+2. The user has the choice of language between French and English.
+
+3. The user has the choice to create or execute a backup job.
+![1](https://github.com/sabineenibas/EasySave/assets/114827482/c34aeacb-6213-4cab-bd37-192ed3c242c6)
 
 
