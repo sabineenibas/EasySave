@@ -28,7 +28,7 @@ Features:
 - Generate log files and status files
 - Use of our program by English and French speaking users
 
-# Release Note V1.1:
+# Release Note V1.1: 7/12/2023
 EasySave 1.0 has been distributed to many customers, now we have updated the V1.1
 ProSoft customers who do not want to install V2 wish to have Log files in XML format. so version 1.1 allows users to choose the format of the log file (XML or JSON).
 
