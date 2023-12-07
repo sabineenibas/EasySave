@@ -144,23 +144,35 @@ namespace EasySaveG6.View
                 string source = Console.ReadLine();
                 if (L == 1)
                 {
-                    Console.WriteLine("Veuillez selectionner un repertoire destination :");
+                    Console.WriteLine("------------------------- Menu -----------------------");
+                    Console.WriteLine("|    Veuillez selectionner un repertoire cible :      |");
+                    Console.WriteLine("|_____________________________________________________|");
                 }
                 else if (L == 2)
                 {
-                    Console.WriteLine("Please select a destination directory :");
+                    Console.WriteLine("------------------------- Menu -----------------------");
+                    Console.WriteLine("|    Please select a target directory :               |");
+                    Console.WriteLine("|_____________________________________________________|");
                 }
 
                 string destination = Console.ReadLine();
                 if (L == 1)
                 {
-                    Console.WriteLine("Veuillez selectionner un type de sauvegarde :");
-                    Console.WriteLine(" 1- Complete                   2- differentielle");
+
+                    Console.WriteLine("------------------------- Menu -------------------------------");
+                    Console.WriteLine("|             Veuillez selectionner un type de sauvegarde :   |");
+                    Console.WriteLine("|                    1. Complete                              |");
+                    Console.WriteLine("|                    2. differentielle                        |");
+                    Console.WriteLine("|_____________________________________________________________|");
+                    Console.WriteLine("entrez le numero 1 ou 2:");
                 }
                 else if (L == 2)
                 {
-                    Console.WriteLine("Please select a backup type :");
-                    Console.WriteLine(" 1- Complete                   2- Differential");
+                    Console.WriteLine("------------------------- Menu -------------------------------");
+                    Console.WriteLine("|             Veuillez selectionner un type de sauvegarde :   |");
+                    Console.WriteLine("|                    1. Complete                              |");
+                    Console.WriteLine("|                    2. differential                          |");
+                    Console.WriteLine("|_____________________________________________________________|");
                 }
                 string type = Console.ReadLine();
                 
