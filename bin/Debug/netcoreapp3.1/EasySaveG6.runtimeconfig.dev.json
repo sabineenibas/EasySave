@@ -1,8 +1,0 @@
-{
-  "runtimeOptions": {
-    "additionalProbingPaths": [
-      "/Users/sabine/.dotnet/store/|arch|/|tfm|",
-      "/Users/sabine/.nuget/packages"
-    ]
-  }
-}
