@@ -24,7 +24,7 @@ namespace EasySaveG6.View
             Console.WriteLine(" | |__| | (_| | ");
             Console.WriteLine(" |______|\\___|");
 
-            travaux_sauvegarde travaux_sauvegarde = new travaux_sauvegarde("cc", "0", @"C:\Users\Pcnet\Desktop\cc", @"C:\Users\Pcnet\Desktop\cc2");
+            travaux_sauvegarde travaux_sauvegarde = new travaux_sauvegarde("cc", "0", @"C:\Users\Pcnet\Desktop\cc", @"C:\Users\Pcnet\Desktop\cc2", "1");
             List<travaux_sauvegarde> s = travaux_sauvegarde.displayBackups();
             int tCount = s.Count;
             if (tCount > 0)
@@ -99,12 +99,12 @@ namespace EasySaveG6.View
                     }
                     // execute a single backup from the class travaux_sauvegarde
                     int sauvegardeIndex = Convert.ToInt32(Console.ReadLine());
-                    travaux_sauvegarde.executeSave(sauvegardeIndex);
+                    travaux_sauvegarde.executeSave(sauvegardeIndex, "json");
                 }
                 else if (user2 == 2)
                 {
                     // execute a sequential backup from the class travaux_sauvegarde
-                    travaux_sauvegarde.executeSaveMultiple();
+                    travaux_sauvegarde.executeSaveMultiple("json");
 
                 }
 
@@ -144,28 +144,52 @@ namespace EasySaveG6.View
                 string source = Console.ReadLine();
                 if (L == 1)
                 {
-                    Console.WriteLine("Veuillez selectionner un repertoire destination :");
+                    Console.WriteLine("------------------------- Menu -----------------------");
+                    Console.WriteLine("|    Veuillez selectionner un repertoire cible :      |");
+                    Console.WriteLine("|_____________________________________________________|");
                 }
                 else if (L == 2)
                 {
-                    Console.WriteLine("Please select a destination directory :");
+                    Console.WriteLine("------------------------- Menu -----------------------");
+                    Console.WriteLine("|    Please select a target directory :               |");
+                    Console.WriteLine("|_____________________________________________________|");
                 }
 
                 string destination = Console.ReadLine();
                 if (L == 1)
                 {
-                    Console.WriteLine("Veuillez selectionner un type de sauvegarde :");
-                    Console.WriteLine(" 1- Complete                   2- differentielle");
+
+                    Console.WriteLine("------------------------- Menu -------------------------------");
+                    Console.WriteLine("|             Veuillez selectionner un type de sauvegarde :   |");
+                    Console.WriteLine("|                    1. Complete                              |");
+                    Console.WriteLine("|                    2. differentielle                        |");
+                    Console.WriteLine("|_____________________________________________________________|");
+                    Console.WriteLine("entrez le numero 1 ou 2:");
                 }
                 else if (L == 2)
                 {
-                    Console.WriteLine("Please select a backup type :");
-                    Console.WriteLine(" 1- Complete                   2- Differential");
+                    Console.WriteLine("------------------------- Menu -------------------------------");
+                    Console.WriteLine("|             Veuillez selectionner un type de sauvegarde :   |");
+                    Console.WriteLine("|                    1. Complete                              |");
+                    Console.WriteLine("|                    2. differential                          |");
+                    Console.WriteLine("|_____________________________________________________________|");
                 }
                 string type = Console.ReadLine();
 
+                if (L == 1)
+                {
+                    Console.WriteLine("Veuillez selectionner le type du fichier log :");
+                    Console.WriteLine(" 1- JSON                   2- XML");
+                }
+                else if (L == 2)
+                {
+                    Console.WriteLine("Please select the type of the log file :");
+                    Console.WriteLine(" 1- JSON                   2- XML");
+                }
+                string logFileType = Console.ReadLine();
+
                 // execute a sequential backup from the class travaux_sauvegarde
-                travaux_sauvegarde k = new travaux_sauvegarde(backupName, type, source, destination);
+                travaux_sauvegarde k = new travaux_sauvegarde(backupName, type, source, destination, logFileType);
                 if (tCount < 5)
                 {
                     k.save(k.travaux_sauvegardeToJSON(), @"..\..\..\Save\travaux_sauvegarde.txt");
