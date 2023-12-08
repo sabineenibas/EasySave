@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Text;
@@ -175,7 +175,7 @@ namespace EasySaveG6.View
                     Console.WriteLine("|_____________________________________________________________|");
                 }
                 string type = Console.ReadLine();
-
+                
                 if (L == 1)
                 {
                     Console.WriteLine("Veuillez selectionner le type du fichier log :");
@@ -190,16 +190,12 @@ namespace EasySaveG6.View
 
                 // execute a sequential backup from the class travaux_sauvegarde
                 travaux_sauvegarde k = new travaux_sauvegarde(backupName, type, source, destination, logFileType);
-                if (tCount < 5)
-                {
+                
                     k.save(k.travaux_sauvegardeToJSON(), @"..\..\..\Save\travaux_sauvegarde.txt");
-                }
+                
 
             }
-            else
-            {
-                Console.WriteLine("Deja 5 travaux de sauvegarde, veuillez en supprimer ou lancer aumoin 1");
-            }
+            
         }
     }
 }
