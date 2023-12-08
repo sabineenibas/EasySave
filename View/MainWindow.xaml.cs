@@ -50,14 +50,17 @@ namespace EasySAVEG6
 
         private void Button_Click_fr(object sender, RoutedEventArgs e)//Function to translate the software into French
         {
-           
+
             langue = "fr";
             Nom.Content = "Nom";
             Source.Content = "Source";
             Lancer.Content = "Lancer";
             AJOUTER.Content = "AJOUTER";
             Destination.Content = "Destination";
-
+            Francais.Name = "Francais";
+            Anglais.Name = "Anglais";
+            Sauvegardes.Content = "Sauvegardes";
+            Commentaire.Content = "Commentaire";
 
         }
 
@@ -69,7 +72,10 @@ namespace EasySAVEG6
             Lancer.Content = "start";
             AJOUTER.Content = "Add";
             Destination.Content = "Destination";
- 
+            Francais.Name = "French";
+            Anglais.Name = "English";
+            Sauvegardes.Content = "backup";
+            Commentaire.Content = "Comments";
 
         }
 
