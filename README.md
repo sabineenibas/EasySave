@@ -46,3 +46,32 @@ Features:
 
 After answering to all this question, you can quit the application by clicking esc
 
+# Release Note V1.1: 7/12/2023
+EasySave 1.0 has been distributed to many customers, now we have updated the V1.1
+ProSoft customers who do not want to install V2 wish to have Log files in XML format. so version 1.1 allows users to choose the format of the log file (XML or JSON).
+# Release Note V2.0: 09/12/2021
+
+1. Graphical Interface:
+Console mode is discontinued. The application is now be developed in WPF under . Net Core
+
+2. Unlimited number of jobs:
+The number of backup jobs is now unlimited.
+
+3. Cryping via CryptoSoft software:
+The software is able to encrypt the files using the CryptoSoft software . Only files whose extensions have been defined by the user in the general settings will be encrypted.
+
+4. Evolution of the Log Daily file
+
+The daily log file must contain additional information : 
+
+- Time required to encrypt the file (in ms)
+
+0: no encryption
+
+0: encryption time (in ms)
+<0: error code
+
+5. Business Software
+
+The presence of business software is detected, the software must prohibit the launch of a backup job. In the case of sequential work, the software will complete the work in progress and stop before starting the next work. The user will be able to define the business software in the general parameters of the software. (Note: the calculator application is the default business software)
+
