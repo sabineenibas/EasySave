@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.IO;
@@ -80,8 +80,8 @@ namespace EasySaveG6.ViewModel
                     {
                         fileC.save2(str.ConvertLogToXML(@"..\..\..\Save\Log.xml"), @"..\..\..\Save\Log.xml");
                     }
-
-
+                    
+                  
                     i++;
 
                 }

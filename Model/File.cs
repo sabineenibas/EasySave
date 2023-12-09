@@ -15,6 +15,7 @@ namespace EasySaveG6.Model
         public string sourcePath { get; set; }
         public string timestamp { get; set; }
         public string type { get; set; }
+        public string logFileType { get; set; }
 
         public File() // file class
         {
@@ -44,6 +45,20 @@ namespace EasySaveG6.Model
             try
             {
                 System.IO.File.WriteAllText(fileName, fRead);
+
+            }
+
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.ToString()); // automatic error message
+            }
+
+        }
+        public void save2(string serializedJSON, string fileName) // method save 
+        {
+            try
+            {
+                System.IO.File.WriteAllText(fileName, serializedJSON);
 
             }
 

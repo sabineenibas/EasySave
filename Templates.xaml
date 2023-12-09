@@ -292,11 +292,11 @@
     <!--// Maximize / Minimize App Button Style //-->
 
     <ImageBrush x:Key="max_def"
-                ImageSource="C:\Users\Mohamed\source\repos\EasySAVEG6\EasySAVEG6\Assets\max_def.png"
+                ImageSource="C:\Users\PC\source\repos\EasySavee\Assets\max_def.png"
                 Stretch="None"/>
 
     <ImageBrush x:Key="max_mo"
-                ImageSource="C:\Users\Mohamed\source\repos\EasySAVEG6\EasySAVEG6\Assets\max_mo.png"
+                ImageSource="C:\Users\PC\source\repos\EasySavee\Assets\max_mo.png"
                 Stretch="None"/>
 
     <Style x:Key="MaxBtnStyle"
@@ -358,11 +358,11 @@
     <!--// Close App Button Style //-->
 
     <ImageBrush x:Key="close_def"
-                ImageSource="C:\Users\Mohamed\source\repos\EasySAVEG6\EasySAVEG6\Assets\shutdown_def.png"
+                ImageSource="C:\Users\PC\source\repos\EasySavee\Assets\shutdown_def.png"
                 Stretch="None" />
 
     <ImageBrush x:Key="close_mo"
-                ImageSource="C:\Users\Mohamed\source\repos\EasySAVEG6\EasySAVEG6\Assets\shutdown_mo.png"
+                ImageSource="C:\Users\PC\source\repos\EasySavee\Assets\shutdown_mo.png"
                 Stretch="None" />
 
     <Style x:Key="CloseBtnStyle"
