@@ -93,7 +93,7 @@
 
                     <MenuItem.Icon>
 
-                        <Image Source="C:\Users\Mohamed\source\repos\EasySAVEG6\Assets\img_About.png"
+                        <Image Source="C:\Users\Pcnet\source\repos\EasySave\Assets\img_About.png"
                                Stretch="None" />
 
                     </MenuItem.Icon>
@@ -109,7 +109,7 @@
 
                     <MenuItem.Icon>
 
-                        <Image Source="C:\Users\Mohamed\source\repos\EasySAVEG6\Assets\img_history.png"
+                        <Image Source="C:\Users\Pcnet\source\repos\EasySave\Assets\img_history.png"
                                Stretch="None" />
 
                     </MenuItem.Icon>
@@ -127,7 +127,7 @@
 
                 <MenuItem.Icon>
 
-                    <Image Source="C:\Users\Mohamed\source\repos\EasySAVEG6\Assets\fr.png"
+                    <Image Source="C:\Users\Pcnet\source\repos\EasySave\Assets\fr.png"
                                Stretch="None" />
 
                 </MenuItem.Icon>
@@ -139,7 +139,7 @@
 
                 <MenuItem.Icon>
 
-                    <Image Source="C:\Users\Mohamed\source\repos\EasySAVEG6\Assets\A.png"
+                    <Image Source="C:\Users\Pcnet\source\repos\EasySave\Assets\A.png"
                                Stretch="None" />
 
                 </MenuItem.Icon>
@@ -150,7 +150,7 @@
 
                 <MenuItem.Icon>
 
-                    <Image Source="C:\Users\Mohamed\source\repos\EasySAVEG6\Assets\img_exit.png"
+                    <Image Source="C:\Users\Pcnet\source\repos\EasySave\Assets\img_exit.png"
                                Stretch="None" />
 
                 </MenuItem.Icon>
@@ -172,15 +172,31 @@
                 Click="CloseBtn_Click" Grid.Column="1" />
 
 
-        <TextBox HorizontalAlignment="Left" Margin="268,68,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="220" Height="24" TextChanged="TextBox_TextChanged_3" Grid.ColumnSpan="2"/>
-        <TextBox HorizontalAlignment="Left" Margin="268,130,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="220" Height="24" Grid.ColumnSpan="2"/>
-        <TextBox HorizontalAlignment="Left" Height="26" Margin="268,191,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="220" TextChanged="TextBox_TextChanged_4" Grid.ColumnSpan="2"/>
-        <Button x:Name="AJOUTER" Content="Ajouter" HorizontalAlignment="Left" Height="41" Margin="218,69,0,0" VerticalAlignment="Top" Width="232" FontSize="23" FontFamily="Yu Gothic UI Semibold" Grid.Column="1"/>
-        <ComboBox Text="Type de sauvegarde" HorizontalAlignment="Left" Height="26" Margin="218,178,0,0" VerticalAlignment="Top" Width="233" Grid.Column="1">
-            <ComboBoxItem Content="Sauvegarde complète"/>
-            <ComboBoxItem Content="Sauvegarde différentielle"/>
+        <TextBox x:Name="nameBackup" HorizontalAlignment="Left" Margin="268,68,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="220" Height="24" TextChanged="TextBox_TextChanged_3" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="sourcePath" HorizontalAlignment="Left" Margin="268,130,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="220" Height="24" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="destinationPath" HorizontalAlignment="Left" Height="26" Margin="268,191,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="220" TextChanged="TextBox_TextChanged_4" Grid.ColumnSpan="2"/>
+        <Button x:Name="AJOUTER" Content="Ajouter" HorizontalAlignment="Left" Height="41" Margin="218,69,0,0" VerticalAlignment="Top" Width="232" FontSize="23" FontFamily="Yu Gothic UI Semibold" Grid.Column="1" Click="addSave_Click"/>
+        <ComboBox x:Name="backupType" Text="Type de sauvegarde" HorizontalAlignment="Left" Height="26" Margin="218,178,0,0" VerticalAlignment="Top" Width="233" Grid.Column="1">
+            <ComboBoxItem Content="Sauvegarde complète" Tag="Full"/>
+            <ComboBoxItem Content="Sauvegarde différentielle" Tag="Differential"/>
         </ComboBox>
-        <ListBox  HorizontalAlignment="Left" Height="172" Margin="288,344,0,0" VerticalAlignment="Top" Width="577" SelectionChanged="ListBox_SelectionChanged" Grid.ColumnSpan="2"/>
+        <ListView x:Name="saveList" HorizontalAlignment="Left" Width="577" Grid.ColumnSpan="2" Margin="288,333,0,171" SelectionChanged="saveList_SelectionChanged">
+            <ListView.View>
+                
+            <GridView>
+                    <GridViewColumn Header="Etat sauvegarde" DisplayMemberBinding="{Binding stateSave}"/>
+                    <GridViewColumn Header="Taille du fichier" DisplayMemberBinding="{Binding totalFileSize}"/>
+                    <GridViewColumn Header="Taille restante du fichier"  DisplayMemberBinding="{Binding fileLeftSize}"/>
+                    <GridViewColumn Header="Fichier total" DisplayMemberBinding="{Binding totalFile}"/>
+                    <GridViewColumn Header="Nom de sauvegarde" DisplayMemberBinding="{Binding backupName}"/>
+                    <GridViewColumn Header="Chemin de destination" DisplayMemberBinding="{Binding destinationPath}"/>
+                    <GridViewColumn Header="Chemin source" DisplayMemberBinding="{Binding sourcePath}"/>
+                    <GridViewColumn Header="Horodatage"  DisplayMemberBinding="{Binding timestamp}"/>
+                    <GridViewColumn Header="Type" DisplayMemberBinding="{Binding type}"/>
+
+                </GridView>
+            </ListView.View>
+        </ListView>
         <Border Background="#525965" BorderThickness="1" HorizontalAlignment="Left" Height="111" Margin="288,562,0,0" VerticalAlignment="Top" Width="576" Grid.ColumnSpan="2">
             <TextBlock HorizontalAlignment="Left" Height="60" Margin="28,19,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="522" Foreground="#FFF8F5F5" FontSize="25"/>
         </Border>
@@ -191,12 +207,12 @@
 
         <Button Content="..."  Margin="101,126,352,542" Background="#FF21363F" Foreground="White" BorderBrush="{x:Null}" Grid.Column="1"/>
         <Button Content="..."  Margin="101,183,352,485" Background="#FF21363F" Foreground="White" BorderBrush="{x:Null}" Grid.Column="1"/>
-        <ComboBox Text="Type de fichier" HorizontalAlignment="Left" Height="26" Margin="217,132,0,0" VerticalAlignment="Top" Width="233" Grid.Column="1">
+        <ComboBox  x:Name="fileType" Text="Type de fichier" HorizontalAlignment="Left" Height="26" Margin="217,132,0,0" VerticalAlignment="Top" Width="233" Grid.Column="1">
             <ComboBoxItem Content="Fichier JSON"/>
             <ComboBoxItem Content="Fichier Xaml"/>
         </ComboBox>
-        <Label Name="Sauvegardes"  HorizontalAlignment="Left" Height="46" Margin="288,301,0,0" VerticalAlignment="Top" Width="200" Foreground="White" Content="Sauvegardes" FontSize="15" Grid.ColumnSpan="2"/>
-        <Label Name="Commentaire"  HorizontalAlignment="Left" Height="46" Margin="288,523,0,0" VerticalAlignment="Top" Width="200" Foreground="White" Content="Commentaire" FontSize="15" Grid.ColumnSpan="2"/>
+        <Label Name="Sauvegardes"  HorizontalAlignment="Left" Height="46" Margin="288,297,0,0" VerticalAlignment="Top" Width="200" Foreground="White" Content="Sauvegardes" FontSize="15" Grid.ColumnSpan="2"/>
+        <Label Name="Commentaire"  HorizontalAlignment="Left" Height="46" Margin="288,529,0,0" VerticalAlignment="Top" Width="200" Foreground="White" Content="Commentaire" FontSize="15" Grid.ColumnSpan="2"/>
 
     </Grid>
 

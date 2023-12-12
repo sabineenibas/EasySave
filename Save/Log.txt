@@ -598,4 +598,15 @@
     "timestamp": "2023-12-02 01:22:45",
     "type": "1"
   }
+, 
+  {
+    "fileSize": 61.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "leryem",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\Livrable2_G5_Administrtion_SI .docx",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\Livrable2_G5_Administrtion_SI .docx",
+    "timestamp": "2023-12-12 11:01:45",
+    "type": "Full",
+    "logFileType": null
+  }
 ]

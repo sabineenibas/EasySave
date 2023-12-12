@@ -12,6 +12,7 @@ namespace EasySaveG6.ViewModel
 
     class Backup : EasySaveG6.Model.File
     {
+        public Backup() { }
         public string tmp { get; set; }
 
         private string source { get; set; }
@@ -33,8 +34,15 @@ namespace EasySaveG6.ViewModel
             this.destinationPath = destinationPath;
             this.type = type;
             this.logFileType = logFileType;
+        }
 
-
+       public void BackupByLeryem(string backupName, string type, string sourcePath, string destinationPath, string logFileType)
+        {
+            this.backupName = backupName;
+            this.sourcePath = sourcePath;
+            this.destinationPath = destinationPath;
+            this.type = type;
+            this.logFileType = logFileType;
         }
         public void backupUserChoice()
         {

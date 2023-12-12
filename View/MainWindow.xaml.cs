@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,8 +13,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using EasySaveG6.ViewModel;
 
-using EasySAVEG6.ViewModel;
+
 
 namespace EasySAVEG6
 {
@@ -22,11 +24,23 @@ namespace EasySAVEG6
     /// </summary>
     public partial class Menu : Window
     {
+        travaux_sauvegarde saveInstance = new travaux_sauvegarde();
+        Backup backupInstance = new Backup();
+        public Menu()
+        {
+            InitializeComponent();
+            LoadSaveList();
+        }
+
+        public void LoadSaveList()
+        {
+            saveList.ItemsSource = saveInstance.displaybackupByLeriem();
+        }
 
 
         private string langue;
 
-
+        
 
         private void MaxBtn_Click(object sender, RoutedEventArgs e)
         {
@@ -130,6 +144,29 @@ namespace EasySAVEG6
         private void MainContentFrame_Navigated(object sender, NavigationEventArgs e)
         {
 
+        }
+
+        private void saveList_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
+        private void addSave_Click(object sender, RoutedEventArgs e)
+        {
+            {
+                ComboBoxItem selectedComboBoxItem = backupType.SelectedItem as ComboBoxItem;
+                string NameBackup = nameBackup.Text;
+                string Sourcepath = sourcePath.Text;
+                string DetsinationPath = destinationPath.Text;
+                string type = "Full";
+                backupInstance.BackupByLeryem(NameBackup, type, Sourcepath, DetsinationPath, "1");
+                backupInstance.Full();
+                nameBackup.Clear();
+                backupType.SelectedItem = null;
+                sourcePath.Clear();
+                destinationPath.Clear();
+                LoadSaveList();
+            }
         }
     }
 

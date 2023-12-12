@@ -62,6 +62,7 @@ namespace EasySaveG6.ViewModel
 
         public List<travaux_sauvegarde> displayBackups()
         {
+
             if (!System.IO.File.Exists(@"..\..\..\Save\travaux_sauvegarde.txt"))
             {
                 System.IO.File.Create(@"..\..\..\Save\travaux_sauvegarde.txt");
@@ -71,6 +72,20 @@ namespace EasySaveG6.ViewModel
             var workList = JsonConvert.DeserializeObject<List<travaux_sauvegarde>>(fRead);
 
             return workList;
+        }
+
+        public object[] displaybackupByLeriem()
+        {
+
+            if (!System.IO.File.Exists(@"..\..\..\Save\travaux_sauvegarde.txt"))
+            {
+                System.IO.File.Create(@"..\..\..\Save\travaux_sauvegarde.txt");
+            }
+
+            string fRead = System.IO.File.ReadAllText(@"..\..\..\Save\travaux_sauvegarde.txt");
+            var workList = JsonConvert.DeserializeObject<List<travaux_sauvegarde>>(fRead);
+
+            return workList.ToArray();
         }
 
         public void executeSave(int name, string logFormat)
