@@ -18,7 +18,7 @@ namespace EasySaveG6.ViewModel
 
         public travaux_sauvegarde(int sourcePath)
         {
-            string fRead = System.IO.File.ReadAllText(@"..\..\..\Save\travaux_sauvegarde.txt");
+            string fRead = System.IO.File.ReadAllText(@"..\..\..\Save\travaux_sauvegarde.json");
             var workList = JsonConvert.DeserializeObject<List<Status>>(fRead);
             this.sourcePath = workList[sourcePath - 1].sourcePath;
         }
@@ -41,7 +41,7 @@ namespace EasySaveG6.ViewModel
 
         public string travaux_sauvegardeToJSON()
         {
-            var f = System.IO.File.Exists(@"..\..\..\Save\travaux_sauvegarde.txt");
+            var f = System.IO.File.Exists(@"..\..\..\Save\travaux_sauvegarde.json");
             if (f)
             {
                 var toJSONN = new List<travaux_sauvegarde> {
@@ -63,12 +63,12 @@ namespace EasySaveG6.ViewModel
         public List<travaux_sauvegarde> displayBackups()
         {
 
-            if (!System.IO.File.Exists(@"..\..\..\Save\travaux_sauvegarde.txt"))
+            if (!System.IO.File.Exists(@"..\..\..\Save\travaux_sauvegarde.json"))
             {
-                System.IO.File.Create(@"..\..\..\Save\travaux_sauvegarde.txt");
+                System.IO.File.Create(@"..\..\..\Save\travaux_sauvegarde.json");
             }
 
-            string fRead = System.IO.File.ReadAllText(@"..\..\..\Save\travaux_sauvegarde.txt");
+            string fRead = System.IO.File.ReadAllText(@"..\..\..\Save\travaux_sauvegarde.json");
             var workList = JsonConvert.DeserializeObject<List<travaux_sauvegarde>>(fRead);
 
             return workList;
@@ -77,12 +77,12 @@ namespace EasySaveG6.ViewModel
         public object[] displaybackupByLeriem()
         {
 
-            if (!System.IO.File.Exists(@"..\..\..\Save\travaux_sauvegarde.txt"))
+            if (!System.IO.File.Exists(@"..\..\..\Save\travaux_sauvegarde.json"))
             {
-                System.IO.File.Create(@"..\..\..\Save\travaux_sauvegarde.txt");
+                System.IO.File.Create(@"..\..\..\Save\travaux_sauvegarde.json");
             }
 
-            string fRead = System.IO.File.ReadAllText(@"..\..\..\Save\travaux_sauvegarde.txt");
+            string fRead = System.IO.File.ReadAllText(@"..\..\..\Save\travaux_sauvegarde.json");
             var workList = JsonConvert.DeserializeObject<List<travaux_sauvegarde>>(fRead);
 
             return workList.ToArray();
@@ -90,16 +90,16 @@ namespace EasySaveG6.ViewModel
 
         public void executeSave(int name, string logFormat)
         {
-            EasySaveG6.Model.File fileT = new Status(@"..\..\..\Save\traveaux_sauvegarde.txt");
+            EasySaveG6.Model.File fileT = new Status(@"..\..\..\Save\traveaux_sauvegarde.json");
             Status status = new Status(backupName, sourcePath, destinationPath, type);
 
-            var f = System.IO.File.Exists(@"..\..\..\Save\travaux_sauvegarde.txt");
+            var f = System.IO.File.Exists(@"..\..\..\Save\travaux_sauvegarde.json");
             if (f)
             {
-                string fRead = System.IO.File.ReadAllText(@"..\..\..\Save\travaux_sauvegarde.txt");
+                string fRead = System.IO.File.ReadAllText(@"..\..\..\Save\travaux_sauvegarde.json");
                 var workList = JsonConvert.DeserializeObject<List<travaux_sauvegarde>>(fRead);
 
-                string fReadStatus = System.IO.File.ReadAllText(@"..\..\..\Save\Status.txt");
+                string fReadStatus = System.IO.File.ReadAllText(@"..\..\..\Save\Status.json");
                 var workListStatus = JsonConvert.DeserializeObject<List<Status>>(fReadStatus);
 
                 Backup b = new Backup(workList[name - 1].backupName, workList[name - 1].type, workList[name - 1].sourcePath, workList[name - 1].destinationPath, workList[name - 1].logFileType);
@@ -113,28 +113,28 @@ namespace EasySaveG6.ViewModel
 
                         workList.RemoveAt(name - 1);
                         var workListToString = JsonConvert.SerializeObject(workList);
-                        fileT.save(workListToString, @"..\..\..\Save\travaux_sauvegarde.txt");
+                        fileT.save(workListToString, @"..\..\..\Save\travaux_sauvegarde.json");
                         break;
                     }
                 }
             }
             else
             {
-                System.IO.File.Create(@"..\..\..\Save\travaux_sauvegarde.txt");
+                System.IO.File.Create(@"..\..\..\Save\travaux_sauvegarde.json");
             }
         }
 
         public void executeSaveMultiple(string logFormat)
         {
-            EasySaveG6.Model.File fileT = new Status(@"..\..\..\Save\traveaux_sauvegarde.txt");
+            EasySaveG6.Model.File fileT = new Status(@"..\..\..\Save\traveaux_sauvegarde.json");
             Status status = new Status();
 
-            var f = System.IO.File.Exists(@"..\..\..\Save\travaux_sauvegarde.txt");
+            var f = System.IO.File.Exists(@"..\..\..\Save\travaux_sauvegarde.json");
 
-            string fReadStatus = System.IO.File.ReadAllText(@"..\..\..\Save\Status.txt");
+            string fReadStatus = System.IO.File.ReadAllText(@"..\..\..\Save\Status.json");
             var workListStatus = JsonConvert.DeserializeObject<List<Status>>(fReadStatus);
 
-            string fRead = System.IO.File.ReadAllText(@"..\..\..\Save\travaux_sauvegarde.txt");
+            string fRead = System.IO.File.ReadAllText(@"..\..\..\Save\travaux_sauvegarde.json");
             var workList = JsonConvert.DeserializeObject<List<travaux_sauvegarde>>(fRead);
 
             for (var i = 0; i < workListStatus.Count; i++)
@@ -146,7 +146,7 @@ namespace EasySaveG6.ViewModel
                     LogBackupDetails(logFormat);
 
                     var workListToString = JsonConvert.SerializeObject(workList);
-                    fileT.save(workListToString, @"..\..\..\Save\travaux_sauvegarde.txt");
+                    fileT.save(workListToString, @"..\..\..\Save\travaux_sauvegarde.json");
                 }
             }
         }
@@ -154,12 +154,12 @@ namespace EasySaveG6.ViewModel
         public void SaveStatus()
         {
             Status status = new Status(backupName, sourcePath, destinationPath, type);
-            status.save(status.convertStatusToJSON(""), @"..\..\..\Save\Status.txt");
+            status.save(status.convertStatusToJSON(""), @"..\..\..\Save\Status.json");
         }
 
         public int workNumber()
         {
-            string fRead = System.IO.File.ReadAllText(@"..\..\..\Save\travaux_sauvegarde.txt");
+            string fRead = System.IO.File.ReadAllText(@"..\..\..\Save\travaux_sauvegarde.json");
             var ccount = fRead.Split("backupName").Length;
             return ccount;
         }

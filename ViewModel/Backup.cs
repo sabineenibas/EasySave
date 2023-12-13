@@ -67,7 +67,7 @@ namespace EasySaveG6.ViewModel
             fileC.type = type;
             fileC.logFileType = logFileType;
 
-
+           
             try
             {
                 var i = 0;
