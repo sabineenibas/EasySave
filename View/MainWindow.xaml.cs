@@ -167,6 +167,7 @@ namespace EasySAVEG6
                 destinationPath.Clear();
                 LoadSaveList();
             
+
         }
 
         private void Lancer_Click(object sender, RoutedEventArgs e)

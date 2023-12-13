@@ -175,7 +175,7 @@
         <TextBox x:Name="nameBackup" HorizontalAlignment="Left" Margin="268,68,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="220" Height="24" TextChanged="TextBox_TextChanged_3" Grid.ColumnSpan="2"/>
         <TextBox x:Name="sourcePath" HorizontalAlignment="Left" Margin="268,130,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="220" Height="24" Grid.ColumnSpan="2"/>
         <TextBox x:Name="destinationPath" HorizontalAlignment="Left" Height="26" Margin="268,191,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="220" TextChanged="TextBox_TextChanged_4" Grid.ColumnSpan="2"/>
-        <Button x:Name="AJOUTER" Content="Ajouter" HorizontalAlignment="Left" Height="41" Margin="218,69,0,0" VerticalAlignment="Top" Width="232" FontSize="23" FontFamily="Yu Gothic UI Semibold" Grid.Column="1" Click="addSave_Click"/>
+        <Button x:Name="AJOUTER" Content="Ajouter" HorizontalAlignment="Left" Height="41" Margin="218,68,0,0" VerticalAlignment="Top" Width="232" FontSize="23" FontFamily="Yu Gothic UI Semibold" Grid.Column="1" Click="addSave_Click"/>
         <ComboBox x:Name="backupType" Text="Type de sauvegarde" HorizontalAlignment="Left" Height="26" Margin="218,178,0,0" VerticalAlignment="Top" Width="233" Grid.Column="1">
             <ComboBoxItem Content="Sauvegarde complète" Tag="1"/>
             <ComboBoxItem Content="Sauvegarde différentielle" Tag="2"/>
