@@ -25,7 +25,7 @@ namespace EasySAVEG6
     public partial class Menu : Window
     {
         travaux_sauvegarde saveInstance = new travaux_sauvegarde();
-        Backup backupInstance = new Backup();
+        
         public Menu()
         {
             InitializeComponent();
@@ -153,20 +153,36 @@ namespace EasySAVEG6
 
         private void addSave_Click(object sender, RoutedEventArgs e)
         {
-            {
+            
                 ComboBoxItem selectedComboBoxItem = backupType.SelectedItem as ComboBoxItem;
                 string NameBackup = nameBackup.Text;
                 string Sourcepath = sourcePath.Text;
                 string DetsinationPath = destinationPath.Text;
-                string type = "Full";
-                backupInstance.BackupByLeryem(NameBackup, type, Sourcepath, DetsinationPath, "1");
-                backupInstance.Full();
+                string type = "1";
+                travaux_sauvegarde k = new travaux_sauvegarde(NameBackup, type, Sourcepath, DetsinationPath, "1");
+                k.save(k.travaux_sauvegardeToJSON(), @"..\..\..\Save\travaux_sauvegarde.json");
                 nameBackup.Clear();
                 backupType.SelectedItem = null;
                 sourcePath.Clear();
                 destinationPath.Clear();
                 LoadSaveList();
-            }
+            
+        }
+
+        private void Lancer_Click(object sender, RoutedEventArgs e)
+        {
+            ComboBoxItem selectedComboBoxItem = backupType.SelectedItem as ComboBoxItem;
+            string NameBackup = nameBackup.Text;
+            string Sourcepath = sourcePath.Text;
+            string DetsinationPath = destinationPath.Text;
+            string type = "1";
+            Backup b = new Backup(NameBackup, type, Sourcepath, DetsinationPath, "1");
+            b.backupUserChoice();
+            nameBackup.Clear();
+            backupType.SelectedItem = null;
+            sourcePath.Clear();
+            destinationPath.Clear();
+            LoadSaveList();
         }
     }
 

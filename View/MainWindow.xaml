@@ -177,8 +177,8 @@
         <TextBox x:Name="destinationPath" HorizontalAlignment="Left" Height="26" Margin="268,191,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="220" TextChanged="TextBox_TextChanged_4" Grid.ColumnSpan="2"/>
         <Button x:Name="AJOUTER" Content="Ajouter" HorizontalAlignment="Left" Height="41" Margin="218,69,0,0" VerticalAlignment="Top" Width="232" FontSize="23" FontFamily="Yu Gothic UI Semibold" Grid.Column="1" Click="addSave_Click"/>
         <ComboBox x:Name="backupType" Text="Type de sauvegarde" HorizontalAlignment="Left" Height="26" Margin="218,178,0,0" VerticalAlignment="Top" Width="233" Grid.Column="1">
-            <ComboBoxItem Content="Sauvegarde complète" Tag="Full"/>
-            <ComboBoxItem Content="Sauvegarde différentielle" Tag="Differential"/>
+            <ComboBoxItem Content="Sauvegarde complète" Tag="1"/>
+            <ComboBoxItem Content="Sauvegarde différentielle" Tag="2"/>
         </ComboBox>
         <ListView x:Name="saveList" HorizontalAlignment="Left" Width="577" Grid.ColumnSpan="2" Margin="288,333,0,171" SelectionChanged="saveList_SelectionChanged">
             <ListView.View>
@@ -200,7 +200,7 @@
         <Border Background="#525965" BorderThickness="1" HorizontalAlignment="Left" Height="111" Margin="288,562,0,0" VerticalAlignment="Top" Width="576" Grid.ColumnSpan="2">
             <TextBlock HorizontalAlignment="Left" Height="60" Margin="28,19,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="522" Foreground="#FFF8F5F5" FontSize="25"/>
         </Border>
-        <Button x:Name="Lancer" Content="Lancer" HorizontalAlignment="Left" Height="58" Margin="288,235,0,0" VerticalAlignment="Top" Width="565" FontSize="35" Grid.ColumnSpan="2"/>
+        <Button x:Name="Lancer" Content="Lancer" HorizontalAlignment="Left" Height="58" Margin="288,235,0,0" VerticalAlignment="Top" Width="565" FontSize="35" Grid.ColumnSpan="2" Click="Lancer_Click"/>
         <Label x:Name="Nom"  HorizontalAlignment="Left" Height="30" Margin="268,38,0,0" VerticalAlignment="Top" Width="157" Foreground="#FFFFF5F5" Grid.ColumnSpan="2" Content="Nom " FontSize="15"/>
         <Label x:Name="Source"  HorizontalAlignment="Left" Height="31" Margin="268,92,0,0" VerticalAlignment="Top" Width="144" Foreground="White" Content="Source" FontSize="15"/>
         <Label x:Name="Destination"  HorizontalAlignment="Left" Height="27" Margin="268,159,0,0" VerticalAlignment="Top" Width="144" Foreground="White" Content="Destination" FontSize="15"/>
