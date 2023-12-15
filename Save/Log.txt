@@ -609,4 +609,26 @@
     "type": "Full",
     "logFileType": null
   }
+, 
+  {
+    "fileSize": 42.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "cc",
+    "destinationPath": "C:\\Users\\PC\\Desktop\\tpiratit\\cc2\\twingo.txt",
+    "sourcePath": "C:\\Users\\PC\\Desktop\\tpiratit\\cc\\twingo.txt",
+    "timestamp": "2023-12-13 06:54:27",
+    "type": "1",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 38.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "TRRK2",
+    "destinationPath": "C:\\Users\\PC\\Desktop\\tpiratit\\twinzo.txt",
+    "sourcePath": "C:\\Users\\PC\\Desktop\\weeeeee\\twinzo.txt",
+    "timestamp": "2023-12-14 04:10:04",
+    "type": "1",
+    "logFileType": null
+  }
 ]

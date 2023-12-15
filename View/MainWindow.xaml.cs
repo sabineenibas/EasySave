@@ -14,6 +14,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using EasySaveG6.ViewModel;
+using Ookii.Dialogs.Wpf;
 
 
 
@@ -184,6 +185,29 @@ namespace EasySAVEG6
             sourcePath.Clear();
             destinationPath.Clear();
             LoadSaveList();
+        }
+
+        private void Parcourir_click(object sender, RoutedEventArgs e)
+        {
+            var dialog = new VistaFolderBrowserDialog();
+            string desktopPath = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+            dialog.SelectedPath = desktopPath;
+
+            if (dialog.ShowDialog() == true)
+            {
+
+                string selectedFolderPath = dialog.SelectedPath;
+                Button button = sender as Button;
+                if (button != null)
+                {
+                    string buttonTag = button.Tag.ToString();
+                    TextBox associatedTextBox = this.FindName(buttonTag) as TextBox;
+                    if (associatedTextBox != null)
+                    {
+                        associatedTextBox.Text = selectedFolderPath;
+                    };
+                }
+            }
         }
     }
 

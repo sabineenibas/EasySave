@@ -93,7 +93,7 @@
 
                     <MenuItem.Icon>
 
-                        <Image Source="C:\Users\Pcnet\source\repos\EasySave\Assets\img_About.png"
+                        <Image Source="C:\Users\PC\source\repos\EasySavee\Assets\img_About.png"
                                Stretch="None" />
 
                     </MenuItem.Icon>
@@ -109,7 +109,7 @@
 
                     <MenuItem.Icon>
 
-                        <Image Source="C:\Users\Pcnet\source\repos\EasySave\Assets\img_history.png"
+                        <Image Source="C:\Users\PC\source\repos\EasySavee\Assets\img_history.png"
                                Stretch="None" />
 
                     </MenuItem.Icon>
@@ -127,7 +127,7 @@
 
                 <MenuItem.Icon>
 
-                    <Image Source="C:\Users\Pcnet\source\repos\EasySave\Assets\fr.png"
+                    <Image Source="C:\Users\PC\source\repos\EasySavee\Assets\fr.png"
                                Stretch="None" />
 
                 </MenuItem.Icon>
@@ -139,7 +139,7 @@
 
                 <MenuItem.Icon>
 
-                    <Image Source="C:\Users\Pcnet\source\repos\EasySave\Assets\A.png"
+                    <Image Source="C:\Users\PC\source\repos\EasySavee\Assets\A.png"
                                Stretch="None" />
 
                 </MenuItem.Icon>
@@ -150,7 +150,7 @@
 
                 <MenuItem.Icon>
 
-                    <Image Source="C:\Users\Pcnet\source\repos\EasySave\Assets\img_exit.png"
+                    <Image Source="C:\Users\PC\source\repos\EasySavee\Assets\img_exit.png"
                                Stretch="None" />
 
                 </MenuItem.Icon>
@@ -205,8 +205,8 @@
         <Label x:Name="Source"  HorizontalAlignment="Left" Height="31" Margin="268,92,0,0" VerticalAlignment="Top" Width="144" Foreground="White" Content="Source" FontSize="15"/>
         <Label x:Name="Destination"  HorizontalAlignment="Left" Height="27" Margin="268,159,0,0" VerticalAlignment="Top" Width="144" Foreground="White" Content="Destination" FontSize="15"/>
 
-        <Button Content="..."  Margin="101,126,352,542" Background="#FF21363F" Foreground="White" BorderBrush="{x:Null}" Grid.Column="1"/>
-        <Button Content="..."  Margin="101,183,352,485" Background="#FF21363F" Foreground="White" BorderBrush="{x:Null}" Grid.Column="1"/>
+        <Button Content="..." Click="Parcourir_click" Tag="sourcePath"  Margin="101,126,352,542" Background="#FF21363F" Foreground="White" BorderBrush="{x:Null}" Grid.Column="1"/>
+        <Button Content="..." Click="Parcourir_click" Tag="destinationPath" Margin="101,183,352,485" Background="#FF21363F" Foreground="White" BorderBrush="{x:Null}" Grid.Column="1"/>
         <ComboBox  x:Name="fileType" Text="Type de fichier" HorizontalAlignment="Left" Height="26" Margin="217,132,0,0" VerticalAlignment="Top" Width="233" Grid.Column="1">
             <ComboBoxItem Content="Fichier JSON"/>
             <ComboBoxItem Content="Fichier Xaml"/>

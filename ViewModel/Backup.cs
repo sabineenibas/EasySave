@@ -36,7 +36,7 @@ namespace EasySaveG6.ViewModel
             this.logFileType = logFileType;
         }
 
-       public void BackupByLeryem(string backupName, string type, string sourcePath, string destinationPath, string logFileType)
+        public void BackupByLeryem(string backupName, string type, string sourcePath, string destinationPath, string logFileType)
         {
             this.backupName = backupName;
             this.sourcePath = sourcePath;
@@ -66,13 +66,13 @@ namespace EasySaveG6.ViewModel
             fileC.destinationPath = destination;
             fileC.type = type;
             fileC.logFileType = logFileType;
-
-           
+            Encrypt(sourcePath, destinationPath);
             try
             {
                 var i = 0;
                 foreach (var file in Directory.GetFiles(sourcePath))
                 {
+
                     System.IO.File.Copy(file, Path.Combine(destinationPath, Path.GetFileName(file)), true);
 
                     str.path(Path.Combine(sourcePath, Path.GetFileName(file)), Path.Combine(destinationPath, Path.GetFileName(file)));
@@ -88,8 +88,8 @@ namespace EasySaveG6.ViewModel
                     {
                         fileC.save2(str.ConvertLogToXML(@"..\..\..\Save\Log.xml"), @"..\..\..\Save\Log.xml");
                     }
-                    
-                  
+
+
                     i++;
 
                 }
@@ -117,7 +117,7 @@ namespace EasySaveG6.ViewModel
             EasySaveG6.Model.File fileS = new Status(@"..\..\..\Save\Status.txt");
 
             var i = 0;
-
+            Encrypt(sourcePath, destinationPath);
             try
             {
                 string[] txtList = Directory.GetFiles(sourcePath);
@@ -179,5 +179,24 @@ namespace EasySaveG6.ViewModel
             }
 
         }
+
+        public void Encrypt(string source, string destination)
+        {
+            using Process processus = new Process();
+            ProcessStartInfo infoProcessus = new ProcessStartInfo
+            {
+                FileName = @"..\..\..\Cryptosoft\Cryptosoft.exe",
+                Arguments = $"{source} {destination}",
+                // Spécifiez d'autres paramètres si nécessaire
+            };
+            processus.StartInfo = infoProcessus;
+            processus.Start();
+        }
+
+
+
+        // passer en argument sourcepath et targetpath
+        // arreter le processus
+
     }
 }
