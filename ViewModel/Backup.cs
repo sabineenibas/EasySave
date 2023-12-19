@@ -1,4 +1,4 @@
-ï»¿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.IO;
@@ -12,6 +12,7 @@ namespace EasySaveG6.ViewModel
 
     class Backup : EasySaveG6.Model.File
     {
+        public Backup() { }
         public string tmp { get; set; }
 
         private string source { get; set; }
@@ -26,19 +27,27 @@ namespace EasySaveG6.ViewModel
             this.source = source;
             this.destination = destination;
         }
-        public Backup(string backupName, string type, string sourcePath, string destinationPath)
+        public Backup(string backupName, string type, string sourcePath, string destinationPath, string logFileType)
         {
             this.backupName = backupName;
             this.sourcePath = sourcePath;
             this.destinationPath = destinationPath;
             this.type = type;
+            this.logFileType = logFileType;
+        }
 
-
+        public void BackupByLeryem(string backupName, string type, string sourcePath, string destinationPath, string logFileType)
+        {
+            this.backupName = backupName;
+            this.sourcePath = sourcePath;
+            this.destinationPath = destinationPath;
+            this.type = type;
+            this.logFileType = logFileType;
         }
         public void backupUserChoice()
         {
 
-            if (type == "Full")
+            if (this.type == "1")
             {
                 Full();
             }
@@ -51,19 +60,19 @@ namespace EasySaveG6.ViewModel
         {
             Log str = Log.Instance;
             Status status = new Status(backupName, sourcePath, destinationPath, type);
-            EasySaveG6.Model.File fileS = new Status(@"");
             EasySaveG6.Model.File fileC = Log.Instance;
             fileC.backupName = backupName;
             fileC.sourcePath = sourcePath;
             fileC.destinationPath = destination;
             fileC.type = type;
-
-
+            fileC.logFileType = logFileType;
+            Encrypt(sourcePath, destinationPath);
             try
             {
                 var i = 0;
                 foreach (var file in Directory.GetFiles(sourcePath))
                 {
+
                     System.IO.File.Copy(file, Path.Combine(destinationPath, Path.GetFileName(file)), true);
 
                     str.path(Path.Combine(sourcePath, Path.GetFileName(file)), Path.Combine(destinationPath, Path.GetFileName(file)));
@@ -71,7 +80,16 @@ namespace EasySaveG6.ViewModel
                     status.fileSizeStatus(sourcePath);
                     status.fileLeftToSavee(i);
 
-                    fileC.save(str.convertLogToJSON(), @"..\..\..\Save\Log.txt");
+                    if (logFileType == "1")
+                    {
+                        fileC.save(str.convertLogToJSON(), @"..\..\..\Save\Log.txt");
+                    }
+                    else
+                    {
+                        fileC.save2(str.ConvertLogToXML(@"..\..\..\Save\Log.xml"), @"..\..\..\Save\Log.xml");
+                    }
+
+
                     i++;
 
                 }
@@ -95,10 +113,11 @@ namespace EasySaveG6.ViewModel
             fileC.sourcePath = sourcePath;
             fileC.destinationPath = destination;
             fileC.type = type;
+            fileC.logFileType = logFileType;
             EasySaveG6.Model.File fileS = new Status(@"..\..\..\Save\Status.txt");
 
             var i = 0;
-
+            Encrypt(sourcePath, destinationPath);
             try
             {
                 string[] txtList = Directory.GetFiles(sourcePath);
@@ -121,7 +140,7 @@ namespace EasySaveG6.ViewModel
                         str.fileSizeLog(Path.Combine(sourcePath, Path.GetFileName(file)));
                         status.fileSizeStatus(sourcePath);
                         status.fileLeftToSavee(i);
-                        fileC.save(str.convertLogToJSON(), @"..\..\..\Save\Log.txt");
+                        fileC.save2(str.ConvertLogToXML(@"..\..\..\Save\Log.xml"), @"..\..\..\Save\Log.xml");
                     }
 
                     // Catch exception if the file was already copied.
@@ -139,8 +158,14 @@ namespace EasySaveG6.ViewModel
                         str.fileSizeLog(Path.Combine(sourcePath, Path.GetFileName(file)));
                         status.fileSizeStatus(sourcePath);
                         status.fileLeftToSavee(i);
-
-                        fileC.save(str.convertLogToJSON(), @"..\..\..\Save\Log.txt");
+                        if (logFileType == "1")
+                        {
+                            fileC.save(str.convertLogToJSON(), @"..\..\..\Save\Log.txt");
+                        }
+                        else
+                        {
+                            fileC.save2(str.ConvertLogToXML(@"..\..\..\Save\Log.xml"), @"..\..\..\Save\Log.xml");
+                        }
                     }
                     i++;
 
@@ -154,5 +179,24 @@ namespace EasySaveG6.ViewModel
             }
 
         }
+
+        public void Encrypt(string source, string destination)
+        {
+            using Process processus = new Process();
+            ProcessStartInfo infoProcessus = new ProcessStartInfo
+            {
+                FileName = @"..\..\..\Cryptosoft\Cryptosoft.exe",
+                Arguments = $"{source} {destination}",
+                // Spécifiez d'autres paramètres si nécessaire
+            };
+            processus.StartInfo = infoProcessus;
+            processus.Start();
+        }
+
+
+
+        // passer en argument sourcepath et targetpath
+        // arreter le processus
+
     }
 }

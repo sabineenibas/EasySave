@@ -1,0 +1,71 @@
+[
+  {
+    "backupName": "Test",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc",
+    "timestamp": "2023-12-02 12:56:27",
+    "type": "1"
+  },
+  {
+    "backupName": "full",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\bg2",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\bg",
+    "timestamp": "2023-12-02 01:01:42",
+    "type": "1"
+  },
+  {
+    "backupName": "sabine",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc",
+    "timestamp": "2023-12-02 01:20:58",
+    "type": "1"
+  },
+  {
+    "backupName": "cc",
+    "destinationPath": "C:\\Users\\PC\\Desktop\\tpiratit\\cc2",
+    "sourcePath": "C:\\Users\\PC\\Desktop\\tpiratit\\cc",
+    "timestamp": "2023-12-13 06:47:13",
+    "type": "1",
+    "logFileType": "1"
+  },
+  {
+    "backupName": "Dlnd",
+    "destinationPath": "C:\\Users\\PC\\Desktop\\tpiratit",
+    "sourcePath": "C:\\Users\\PC\\Desktop\\twingo.txt",
+    "timestamp": "2023-12-14 03:35:06",
+    "type": "1",
+    "logFileType": "1"
+  },
+  {
+    "backupName": "Trrk2",
+    "destinationPath": "C:\\Users\\PC\\Desktop\\tpiratit",
+    "sourcePath": "C:\\Users\\PC\\Desktop\\weeeeee",
+    "timestamp": "2023-12-14 04:08:38",
+    "type": "1",
+    "logFileType": "1"
+  },
+  {
+    "backupName": "",
+    "destinationPath": "",
+    "sourcePath": "",
+    "timestamp": "2023-12-14 04:10:18",
+    "type": "1",
+    "logFileType": "1"
+  },
+  {
+    "backupName": "",
+    "destinationPath": "",
+    "sourcePath": "",
+    "timestamp": "2023-12-14 04:10:20",
+    "type": "1",
+    "logFileType": "1"
+  },
+  {
+    "backupName": "ALOOOO",
+    "destinationPath": "C:\\Users\\PC\\Desktop\\tpiratit",
+    "sourcePath": "C:\\Users\\PC\\Desktop\\weeeeee",
+    "timestamp": "2023-12-14 04:31:29",
+    "type": "1",
+    "logFileType": "1"
+  }
+]

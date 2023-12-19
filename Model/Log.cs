@@ -1,14 +1,9 @@
-﻿using System;
-using System.Collections.Generic; // Used for data types
-using System.Text;
-using System.IO; // Used to manage files and directories
-using System.Threading; // Used for progression tests 
-using System.Diagnostics; // Used to calculate time
-using Newtonsoft.Json; // Used to parse Json data 
-using System.Linq;
-
-
 using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Text;
+using System.Xml.Serialization; // Used for XML serialization
+using Newtonsoft.Json;
 
 namespace EasySaveG6.Model
 {
@@ -48,6 +43,105 @@ namespace EasySaveG6.Model
         }
 
         // Convert the log file to JSON format
+        public string ConvertLogToJSON()
+        {
+            var toJSON = new List<Log> {
+                new Log {
+                    backupName = backupName,
+                    type = type,
+                    sourcePath = sourcePath,
+                    destinationPath = destinationPath,
+                    timestamp = DateTime.Now.ToString("yyyy-MM-dd hh:mm:ss"),
+                    fileSize = fileSize,
+                    timeTrensfertFile = timeTrensfertFile
+                }
+            };
+
+            var serializedJSON = JsonConvert.SerializeObject(toJSON, Formatting.Indented);
+            return serializedJSON;
+        }
+
+        // Convert the log file to XML format
+        public string ConvertLogToXML(string fileName)
+        {
+            // Read existing XML content from the file
+            string xml = System.IO.File.ReadAllText(fileName);
+
+            XmlRootAttribute xRoot = new XmlRootAttribute();
+            xRoot.ElementName = "Log";
+            xRoot.IsNullable = true;
+
+            // Deserialize existing XML content into a list of Log objects
+            XmlSerializer serializer = new XmlSerializer(typeof(List<Log>), xRoot);
+            TextReader textReader = new StringReader(xml);
+            List<Log> worklist = (List<Log>)serializer.Deserialize(textReader);
+
+            // Add a new log entry to the list
+            worklist.Add(new Log()
+            {
+                backupName = backupName,
+                type = type,
+                sourcePath = sourcePath,
+                destinationPath = destinationPath,
+                timestamp = DateTime.Now.ToString("yyyy-MM-dd hh:mm:ss"),
+                fileSize = fileSize,
+                timeTrensfertFile = timeTrensfertFile,
+            });
+
+            // Serialize the updated list back to XML
+            var writer = new StringWriter();
+            serializer.Serialize(writer, worklist);
+            var updatedXml = writer.ToString();
+
+            try
+            {
+                // Write the updated XML content back to the file
+                System.IO.File.WriteAllText(fileName, updatedXml);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
+            }
+
+            return updatedXml;
+        }
+
+
+        // Method to calculate file size for logging
+        public void FileSizeLog(string fileName)
+        {
+            fileSize = fileName.Length;
+        }
+
+        // Method to set source and destination paths
+        public void SetPath(string source, string destination)
+        {
+            sourcePath = source;
+            destinationPath = destination;
+        }
+
+        // Method to store transfer time with TimeSpan that tracks the execution time
+        public void SetTransferTime(TimeSpan transferTime)
+        {
+            timeTrensfertFile = transferTime;
+        }
+
+        // Method to choose log format (XML or JSON)
+        public string ChooseLogFormat(string format)
+        {
+            if (format.ToLower() == "json")
+            {
+                return ConvertLogToJSON();
+            }
+            else if (format.ToLower() == "xml")
+            {
+                return ConvertLogToXML(@"..\..\..\Save\Log.xml");
+            }
+            else
+            {
+                return "Invalid log format. Please choose either XML or JSON.";
+            }
+        }
         public string convertLogToJSON()
         {
             var toJSON = new List<Log> {
@@ -86,5 +180,4 @@ namespace EasySaveG6.Model
             this.timeTrensfertFile = timeTrensfertFile;
         }
     }
-
 }

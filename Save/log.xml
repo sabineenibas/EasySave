@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-16"?>
+<Log xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Log>
+    <backupName>Cc</backupName>
+    <destinationPath>C:\Users\Pcnet\Desktop\cc2\Livrable2_G5_Administrtion_SI .docx</destinationPath>
+    <sourcePath>C:\Users\Pcnet\Desktop\cc\Livrable2_G5_Administrtion_SI .docx</sourcePath>
+    <timestamp>2023-12-06 02:42:44</timestamp>
+    <type>1</type>
+    <fileSize>61</fileSize>
+    <timeTrensfertFile>PT0S</timeTrensfertFile>
+  </Log>
+  <Log>
+    <backupName>Leryem</backupName>
+    <destinationPath>C:\Users\Pcnet\Desktop\cc2\Livrable2_G5_Administrtion_SI .docx</destinationPath>
+    <sourcePath>C:\Users\Pcnet\Desktop\cc\Livrable2_G5_Administrtion_SI .docx</sourcePath>
+    <timestamp>2023-12-12 10:58:11</timestamp>
+    <type>Full</type>
+    <fileSize>61</fileSize>
+    <timeTrensfertFile>PT0S</timeTrensfertFile>
+  </Log>
+</Log>

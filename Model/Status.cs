@@ -5,6 +5,7 @@ using Newtonsoft.Json;
 using System.IO;
 using System.Linq;
 
+
 namespace EasySaveG6.Model
 {
     // Class representing the status of a backup job
