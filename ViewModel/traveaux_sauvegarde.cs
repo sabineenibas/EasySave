@@ -102,7 +102,7 @@ namespace EasySaveG6.ViewModel
                 string fReadStatus = System.IO.File.ReadAllText(@"..\..\..\Save\Status.json");
                 var workListStatus = JsonConvert.DeserializeObject<List<Status>>(fReadStatus);
 
-                Backup b = new Backup(workList[name - 1].backupName, workList[name - 1].type, workList[name - 1].sourcePath, workList[name - 1].destinationPath, workList[name - 1].logFileType);
+                Backup b = new Backup(workList[name].backupName, workList[name].type, workList[name].sourcePath, workList[name].destinationPath, workList[name].logFileType);
                 b.backupUserChoice();
 
                 for (var i = 0; i < workListStatus.Count; i++)
