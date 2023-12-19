@@ -26,7 +26,7 @@ namespace EasySAVEG6
     public partial class Menu : Window
     {
         travaux_sauvegarde saveInstance = new travaux_sauvegarde();
-        private int saveIndex {  get; set; }
+        private int saveIndex { get; set; }
 
 
         public Menu()
@@ -43,7 +43,7 @@ namespace EasySAVEG6
 
         private string langue;
 
-        
+
 
         private void MaxBtn_Click(object sender, RoutedEventArgs e)
         {
@@ -152,13 +152,23 @@ namespace EasySAVEG6
 
         private void addSave_Click(object sender, RoutedEventArgs e)
         {
-            
-                
-                string NameBackup = nameBackup.Text;
-                string Sourcepath = sourcePath.Text;
-                string DetsinationPath = destinationPath.Text;
-                ComboBoxItem selectedComboBoxItem = fileType.SelectedItem as ComboBoxItem;
-                int type = fileType.SelectedIndex + 1;
+
+
+            string NameBackup = nameBackup.Text;
+            string Sourcepath = sourcePath.Text;
+            string DetsinationPath = destinationPath.Text;
+
+            string type = "1";
+            travaux_sauvegarde k = new travaux_sauvegarde(NameBackup, type, Sourcepath, DetsinationPath, "1");
+            k.save(k.travaux_sauvegardeToJSON(), @"..\..\..\Save\travaux_sauvegarde.json");
+            nameBackup.Clear();
+            BackUpType.SelectedItem = null;
+            sourcePath.Clear();
+            destinationPath.Clear();
+            LoadSaveList();
+
+
+
 
             //travaux_sauvegarde k = new travaux_sauvegarde(NameBackup, type, Sourcepath, DetsinationPath, type);
             //k.save(k.travaux_sauvegardeToJSON(), @"..\..\..\Save\travaux_sauvegarde.json");
@@ -172,8 +182,21 @@ namespace EasySAVEG6
 
         private void Lancer_Click(object sender, RoutedEventArgs e)
         {
+
+            string NameBackup = nameBackup.Text;
+            string Sourcepath = sourcePath.Text;
+            string DetsinationPath = destinationPath.Text;
+            string type = "1";
+            Backup b = new Backup(NameBackup, type, Sourcepath, DetsinationPath, "1");
+            b.backupUserChoice();
+            nameBackup.Clear();
+            BackUpType.SelectedItem = null;
+            sourcePath.Clear();
+            destinationPath.Clear();
+
             travaux_sauvegarde ExeSave = new travaux_sauvegarde();
             ExeSave.executeSave(saveIndex, "");
+
             LoadSaveList();
         }
 
@@ -203,6 +226,11 @@ namespace EasySAVEG6
         private void MenuItem_Click_3(object sender, RoutedEventArgs e)
         {
 
+        }
+
+
+        private void backupType_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
         }
 
         private void saveList_SelectionChanged(object sender, SelectionChangedEventArgs e)
