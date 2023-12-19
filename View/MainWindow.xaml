@@ -175,10 +175,17 @@
         <TextBox x:Name="nameBackup" HorizontalAlignment="Left" Margin="332,52,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="220" Height="24" TextChanged="TextBox_TextChanged_3" Grid.ColumnSpan="2"/>
         <TextBox x:Name="sourcePath" HorizontalAlignment="Left" Margin="334,92,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="220" Height="24" Grid.ColumnSpan="2"/>
         <TextBox x:Name="destinationPath" HorizontalAlignment="Left" Height="26" Margin="334,131,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="220" TextChanged="TextBox_TextChanged_4" Grid.ColumnSpan="2"/>
-        <Button x:Name="AJOUTER" Content="Ajouter" HorizontalAlignment="Left" Height="58" Margin="216,182,0,0" VerticalAlignment="Top" Width="194" FontSize="35" Grid.Column="1" Click="addSave_Click"/>
+        <Button x:Name="AJOUTER" Content="Ajouter" Height="58" Margin="216,182,76,0" VerticalAlignment="Top" FontSize="35" Grid.Column="1" Click="addSave_Click"/>
         <ListView x:Name="saveList" HorizontalAlignment="Left" Width="577" Grid.ColumnSpan="2" Margin="288,329,0,175" SelectionChanged="saveList_SelectionChanged">
             <ListView.View>
                 <GridView>
+                    <GridViewColumn Width="50" Header="">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <CheckBox IsChecked="{Binding IsSelected, Mode=TwoWay}" />
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
                     <GridViewColumn Header="Etat sauvegarde" DisplayMemberBinding="{Binding stateSave}"/>
                     <GridViewColumn Header="Taille du fichier" DisplayMemberBinding="{Binding totalFileSize}"/>
                     <GridViewColumn Header="Taille restante du fichier"  DisplayMemberBinding="{Binding fileLeftSize}"/>
@@ -188,6 +195,7 @@
                     <GridViewColumn Header="Chemin source" DisplayMemberBinding="{Binding sourcePath}"/>
                     <GridViewColumn Header="Horodatage"  DisplayMemberBinding="{Binding timestamp}"/>
                     <GridViewColumn Header="Type" DisplayMemberBinding="{Binding type}"/>
+                    <GridViewColumn Header="Type" DisplayMemberBinding="{Binding BackUpType}"/>
                 </GridView>
             </ListView.View>
         </ListView>
@@ -222,8 +230,8 @@
                 <ImageBrush ImageSource="/View/icons8-stop-48.png"/>
             </Button.Background>
         </Button>
-        <ComboBox  x:Name="BackUpType" Text="Type de fichier" HorizontalAlignment="Left" Height="26" Margin="210,128,0,0" VerticalAlignment="Top" Width="241" Grid.Column="1" SelectionChanged="fileType_Copy_SelectionChanged">
-            <ComboBoxItem Content="Déffirentielle"/>
+        <ComboBox  x:Name="BackUpType" Text="Type de fichier" HorizontalAlignment="Left" Height="26" Margin="210,128,0,0" VerticalAlignment="Top" Width="241" Grid.Column="1">
+            <ComboBoxItem Content="Défferentielle"/>
             <ComboBoxItem Content="Complete"/>
         </ComboBox>
 

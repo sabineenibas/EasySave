@@ -600,35 +600,134 @@
   }
 , 
   {
+    "fileSize": 32.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "ccccc",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\bg2\\cc.txt",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\bg\\cc.txt",
+    "timestamp": "2023-12-19 09:04:03",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 32.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "ccccc",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\bg2\\cc.txt",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\bg\\cc.txt",
+    "timestamp": "2023-12-19 09:04:06",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 32.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "ccccc",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\bg2\\cc.txt",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\bg\\cc.txt",
+    "timestamp": "2023-12-19 09:04:08",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 32.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "ccccc",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\bg2\\cc.txt",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\bg\\cc.txt",
+    "timestamp": "2023-12-19 09:04:08",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
     "fileSize": 61.0,
     "timeTrensfertFile": "00:00:00",
-    "backupName": "leryem",
+    "backupName": "ccccc",
     "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\Livrable2_G5_Administrtion_SI .docx",
     "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\Livrable2_G5_Administrtion_SI .docx",
-    "timestamp": "2023-12-12 11:01:45",
-    "type": "Full",
+    "timestamp": "2023-12-19 09:04:09",
+    "type": "2",
     "logFileType": null
   }
 , 
   {
-    "fileSize": 42.0,
+    "fileSize": 32.0,
     "timeTrensfertFile": "00:00:00",
-    "backupName": "cc",
-    "destinationPath": "C:\\Users\\PC\\Desktop\\tpiratit\\cc2\\twingo.txt",
-    "sourcePath": "C:\\Users\\PC\\Desktop\\tpiratit\\cc\\twingo.txt",
-    "timestamp": "2023-12-13 06:54:27",
-    "type": "1",
+    "backupName": "ccccc",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\bg2\\cc.txt",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\bg\\cc.txt",
+    "timestamp": "2023-12-19 09:04:09",
+    "type": "2",
     "logFileType": null
   }
 , 
   {
-    "fileSize": 38.0,
+    "fileSize": 32.0,
     "timeTrensfertFile": "00:00:00",
-    "backupName": "TRRK2",
-    "destinationPath": "C:\\Users\\PC\\Desktop\\tpiratit\\twinzo.txt",
-    "sourcePath": "C:\\Users\\PC\\Desktop\\weeeeee\\twinzo.txt",
-    "timestamp": "2023-12-14 04:10:04",
-    "type": "1",
+    "backupName": "ccccc",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\bg2\\cc.txt",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\bg\\cc.txt",
+    "timestamp": "2023-12-19 09:04:10",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 32.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "test bg",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\bg2\\cc.txt",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\bg\\cc.txt",
+    "timestamp": "2023-12-19 09:04:11",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 61.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "test bg",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\Livrable2_G5_Administrtion_SI .docx",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\Livrable2_G5_Administrtion_SI .docx",
+    "timestamp": "2023-12-19 09:04:11",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 61.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "CCCCCC",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\Livrable2_G5_Administrtion_SI .docx",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\Livrable2_G5_Administrtion_SI .docx",
+    "timestamp": "2023-12-19 09:39:23",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 32.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "ccccc",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\bg2\\cc.txt",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\bg\\cc.txt",
+    "timestamp": "2023-12-19 09:39:50",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 61.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "ccccc",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\Livrable2_G5_Administrtion_SI .docx",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\Livrable2_G5_Administrtion_SI .docx",
+    "timestamp": "2023-12-19 09:39:50",
+    "type": "2",
     "logFileType": null
   }
 ]

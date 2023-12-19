@@ -1,20 +1,17 @@
 using System;
 using System.Collections.Generic;
-using System.Text;
-using System.IO;
-using System.Threading;
 using System.Diagnostics;
-using System.Net.NetworkInformation;
+using System.IO;
+using System.Threading.Tasks;
+using System.Windows;
 using EasySaveG6.Model;
 
 namespace EasySaveG6.ViewModel
 {
-
     class Backup : EasySaveG6.Model.File
     {
         public Backup() { }
         public string tmp { get; set; }
-
         private string source { get; set; }
         private string destination { get; set; }
 
@@ -22,11 +19,13 @@ namespace EasySaveG6.ViewModel
         {
             this.backupName = backupName;
         }
+
         public Backup(string source, string destination)
         {
             this.source = source;
             this.destination = destination;
         }
+
         public Backup(string backupName, string type, string sourcePath, string destinationPath, string logFileType)
         {
             this.backupName = backupName;
@@ -44,18 +43,19 @@ namespace EasySaveG6.ViewModel
             this.type = type;
             this.logFileType = logFileType;
         }
+
         public void backupUserChoice()
         {
-
             if (this.type == "1")
             {
                 Full();
             }
             else
             {
-                differential();
+                Differential();
             }
         }
+
         public void Full()
         {
             Log str = Log.Instance;
@@ -67,42 +67,47 @@ namespace EasySaveG6.ViewModel
             fileC.type = type;
             fileC.logFileType = logFileType;
             Encrypt(sourcePath, destinationPath);
+
             try
             {
-                var i = 0;
-                foreach (var file in Directory.GetFiles(sourcePath))
-                {
+                var files = Directory.GetFiles(sourcePath);
+                List<string> processedFiles = new List<string>();
 
+                Parallel.ForEach(files, file =>
+                {
+                    // Process each file in parallel
                     System.IO.File.Copy(file, Path.Combine(destinationPath, Path.GetFileName(file)), true);
 
                     str.path(Path.Combine(sourcePath, Path.GetFileName(file)), Path.Combine(destinationPath, Path.GetFileName(file)));
                     str.fileSizeLog(Path.Combine(sourcePath, Path.GetFileName(file)));
                     status.fileSizeStatus(sourcePath);
-                    status.fileLeftToSavee(i);
+                    status.fileLeftToSavee(files.Length);
 
-                    if (logFileType == "1")
+                    lock (processedFiles)
                     {
-                        fileC.save(str.convertLogToJSON(), @"..\..\..\Save\Log.txt");
+                        processedFiles.Add(Path.GetFileName(file));
                     }
-                    else
-                    {
-                        fileC.save2(str.ConvertLogToXML(@"..\..\..\Save\Log.xml"), @"..\..\..\Save\Log.xml");
-                    }
+                });
 
+                // Display a MessageBox after the parallel loop
+                MessageBox.Show($"Processed {processedFiles.Count} files: {string.Join(", ", processedFiles)}");
 
-                    i++;
-
+                if (logFileType == "1")
+                {
+                    fileC.save(str.convertLogToJSON(), @"..\..\..\Save\Log.txt");
                 }
-
+                else
+                {
+                    fileC.save2(str.ConvertLogToXML(@"..\..\..\Save\Log.xml"), @"..\..\..\Save\Log.xml");
+                }
             }
-
             catch (IOException iox)
             {
                 Console.WriteLine(iox.Message);
             }
-
         }
-        public void differential()
+
+        public void Differential()
         {
             DateTime lastModified;
             DateTime lastModified2;
@@ -116,34 +121,25 @@ namespace EasySaveG6.ViewModel
             fileC.logFileType = logFileType;
             EasySaveG6.Model.File fileS = new Status(@"..\..\..\Save\Status.txt");
 
-            var i = 0;
-            Encrypt(sourcePath, destinationPath);
             try
             {
-                string[] txtList = Directory.GetFiles(sourcePath);
-
-                // Copy text files.
-                foreach (string file in txtList)
+                string[] files = Directory.GetFiles(sourcePath);
+                Parallel.ForEach(files, file =>
                 {
+                    // Process each file in parallel
                     str.fileSizeLog(file);
-                    // Remove path from the file name.
                     string fName = file.Substring(sourcePath.Length + 1);
 
                     try
                     {
-
-                        // Will not overwrite if the destination file already exists.
                         System.IO.File.Copy(Path.Combine(sourcePath, fName), Path.Combine(destinationPath, fName));
 
                         str.path(Path.Combine(sourcePath, Path.GetFileName(file)), Path.Combine(destinationPath, Path.GetFileName(file)));
                         status.path(Path.Combine(sourcePath, Path.GetFileName(file)), Path.Combine(destinationPath, Path.GetFileName(file)));
                         str.fileSizeLog(Path.Combine(sourcePath, Path.GetFileName(file)));
                         status.fileSizeStatus(sourcePath);
-                        status.fileLeftToSavee(i);
-                        fileC.save2(str.ConvertLogToXML(@"..\..\..\Save\Log.xml"), @"..\..\..\Save\Log.xml");
+                        status.fileLeftToSavee(files.Length);
                     }
-
-                    // Catch exception if the file was already copied.
                     catch (IOException copyError)
                     {
                         lastModified = System.IO.File.GetLastWriteTime(Path.Combine(sourcePath, Path.GetFileName(file)));
@@ -157,7 +153,7 @@ namespace EasySaveG6.ViewModel
                         str.path(Path.Combine(sourcePath, Path.GetFileName(file)), Path.Combine(destinationPath, Path.GetFileName(file)));
                         str.fileSizeLog(Path.Combine(sourcePath, Path.GetFileName(file)));
                         status.fileSizeStatus(sourcePath);
-                        status.fileLeftToSavee(i);
+                        status.fileLeftToSavee(files.Length);
                         if (logFileType == "1")
                         {
                             fileC.save(str.convertLogToJSON(), @"..\..\..\Save\Log.txt");
@@ -167,17 +163,12 @@ namespace EasySaveG6.ViewModel
                             fileC.save2(str.ConvertLogToXML(@"..\..\..\Save\Log.xml"), @"..\..\..\Save\Log.xml");
                         }
                     }
-                    i++;
-
-                }
-
+                });
             }
-
             catch (DirectoryNotFoundException dirNotFound)
             {
                 Console.WriteLine(dirNotFound.Message);
             }
-
         }
 
         public void Encrypt(string source, string destination)
@@ -192,11 +183,5 @@ namespace EasySaveG6.ViewModel
             processus.StartInfo = infoProcessus;
             processus.Start();
         }
-
-
-
-        // passer en argument sourcepath et targetpath
-        // arreter le processus
-
     }
 }

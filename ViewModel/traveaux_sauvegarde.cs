@@ -3,17 +3,39 @@ using System.Collections.Generic;
 using System.IO;
 using Newtonsoft.Json;
 using EasySaveG6.Model;
+using System.ComponentModel;
 
 namespace EasySaveG6.ViewModel
 {
-    class travaux_sauvegarde : EasySaveG6.Model.File
+    class travaux_sauvegarde : EasySaveG6.Model.File, INotifyPropertyChanged
     {
         private string sauvegarde { get; set; }
 
+        private bool isSelected;
+
+        public bool IsSelected
+        {
+            get { return isSelected; }
+            set
+            {
+                if (isSelected != value)
+                {
+                    isSelected = value;
+                    OnPropertyChanged(nameof(IsSelected));
+                }
+            }
+        }
 
         public travaux_sauvegarde()
         {
+        }
 
+
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        protected virtual void OnPropertyChanged(string propertyName)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
 
         public travaux_sauvegarde(int sourcePath)
@@ -74,7 +96,7 @@ namespace EasySaveG6.ViewModel
             return workList;
         }
 
-        public object[] displaybackupByLeriem()
+        public List<travaux_sauvegarde> displayOneBackup(int index)
         {
 
             if (!System.IO.File.Exists(@"..\..\..\Save\travaux_sauvegarde.json"))
@@ -85,10 +107,24 @@ namespace EasySaveG6.ViewModel
             string fRead = System.IO.File.ReadAllText(@"..\..\..\Save\travaux_sauvegarde.json");
             var workList = JsonConvert.DeserializeObject<List<travaux_sauvegarde>>(fRead);
 
-            return workList.ToArray();
+            return new List<travaux_sauvegarde> { workList[index] };
         }
 
-        public void executeSave(int name, string logFormat)
+        public List<travaux_sauvegarde> displaybackupByLeriem()
+        {
+
+            if (!System.IO.File.Exists(@"..\..\..\Save\travaux_sauvegarde.json"))
+            {
+                System.IO.File.Create(@"..\..\..\Save\travaux_sauvegarde.json");
+            }
+
+            string fRead = System.IO.File.ReadAllText(@"..\..\..\Save\travaux_sauvegarde.json");
+            var workList = JsonConvert.DeserializeObject<List<travaux_sauvegarde>>(fRead);
+
+            return workList;
+        }
+
+        public void executeSave(int name)
         {
             EasySaveG6.Model.File fileT = new Status(@"..\..\..\Save\traveaux_sauvegarde.json");
             Status status = new Status(backupName, sourcePath, destinationPath, type);
@@ -104,14 +140,14 @@ namespace EasySaveG6.ViewModel
 
                 Backup b = new Backup(workList[name].backupName, workList[name].type, workList[name].sourcePath, workList[name].destinationPath, workList[name].logFileType);
                 b.backupUserChoice();
-
+                string logFormat = workList[name].logFileType;
                 for (var i = 0; i < workListStatus.Count; i++)
                 {
-                    if (workList[name - 1].backupName == workListStatus[i].backupName)
+                    if (workList[name].backupName == workListStatus[i].backupName)
                     {
                         LogBackupDetails(logFormat);
 
-                        workList.RemoveAt(name - 1);
+                        workList.RemoveAt(name);
                         var workListToString = JsonConvert.SerializeObject(workList);
                         fileT.save(workListToString, @"..\..\..\Save\travaux_sauvegarde.json");
                         break;
@@ -121,33 +157,6 @@ namespace EasySaveG6.ViewModel
             else
             {
                 System.IO.File.Create(@"..\..\..\Save\travaux_sauvegarde.json");
-            }
-        }
-
-        public void executeSaveMultiple(string logFormat)
-        {
-            EasySaveG6.Model.File fileT = new Status(@"..\..\..\Save\traveaux_sauvegarde.json");
-            Status status = new Status();
-
-            var f = System.IO.File.Exists(@"..\..\..\Save\travaux_sauvegarde.json");
-
-            string fReadStatus = System.IO.File.ReadAllText(@"..\..\..\Save\Status.json");
-            var workListStatus = JsonConvert.DeserializeObject<List<Status>>(fReadStatus);
-
-            string fRead = System.IO.File.ReadAllText(@"..\..\..\Save\travaux_sauvegarde.json");
-            var workList = JsonConvert.DeserializeObject<List<travaux_sauvegarde>>(fRead);
-
-            for (var i = 0; i < workListStatus.Count; i++)
-            {
-                Backup b = new Backup(workList[i].backupName, workList[i].type, workList[i].sourcePath, workList[i].destinationPath, workList[i].logFileType);
-                b.backupUserChoice();
-                if (workList[i].backupName == workListStatus[i].backupName && workListStatus[i].stateSave != "END")
-                {
-                    LogBackupDetails(logFormat);
-
-                    var workListToString = JsonConvert.SerializeObject(workList);
-                    fileT.save(workListToString, @"..\..\..\Save\travaux_sauvegarde.json");
-                }
             }
         }
 

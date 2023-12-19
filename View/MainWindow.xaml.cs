@@ -27,6 +27,7 @@ namespace EasySAVEG6
     {
         travaux_sauvegarde saveInstance = new travaux_sauvegarde();
         private int saveIndex { get; set; }
+        private int[] checkedItemIndices { get; set; }
 
 
         public Menu()
@@ -37,7 +38,17 @@ namespace EasySAVEG6
 
         public void LoadSaveList()
         {
-            saveList.ItemsSource = saveInstance.displaybackupByLeriem();
+            List<travaux_sauvegarde> saveListItems = new List<travaux_sauvegarde>();
+
+            Parallel.ForEach(saveInstance.displaybackupByLeriem(), saveItem =>
+            {
+                lock (saveListItems)
+                {
+                    saveListItems.Add(saveItem);
+                }
+            });
+
+            saveList.ItemsSource = saveListItems;
         }
 
 
@@ -152,30 +163,35 @@ namespace EasySAVEG6
 
         private void addSave_Click(object sender, RoutedEventArgs e)
         {
-
-
             string NameBackup = nameBackup.Text;
             string Sourcepath = sourcePath.Text;
             string DetsinationPath = destinationPath.Text;
+            int selectedIndexFileType = fileType.SelectedIndex + 1;
+            int selectedIndexBackupType = fileType.SelectedIndex + 1;
+            string type;
+            string logTypeFile;
+            if (selectedIndexFileType.ToString() == "1")
+            {
+                type = "2";
+            }
+            else
+            {
+                type = "1";
+            }
+            if (selectedIndexBackupType.ToString() == "1")
+            {
+                logTypeFile = "1";
+            }
+            else
+            {
+                logTypeFile = "2";
+            }
 
-            string type = "1";
-            travaux_sauvegarde k = new travaux_sauvegarde(NameBackup, type, Sourcepath, DetsinationPath, "1");
+            travaux_sauvegarde k = new travaux_sauvegarde(NameBackup, type, Sourcepath, DetsinationPath, logTypeFile);
             k.save(k.travaux_sauvegardeToJSON(), @"..\..\..\Save\travaux_sauvegarde.json");
-            nameBackup.Clear();
-            BackUpType.SelectedItem = null;
-            sourcePath.Clear();
-            destinationPath.Clear();
             LoadSaveList();
 
 
-
-
-            //travaux_sauvegarde k = new travaux_sauvegarde(NameBackup, type, Sourcepath, DetsinationPath, type);
-            //k.save(k.travaux_sauvegardeToJSON(), @"..\..\..\Save\travaux_sauvegarde.json");
-            //nameBackup.Clear();
-            //sourcePath.Clear();
-            //destinationPath.Clear();
-            //LoadSaveList();
 
 
         }
@@ -183,21 +199,30 @@ namespace EasySAVEG6
         private void Lancer_Click(object sender, RoutedEventArgs e)
         {
 
-            string NameBackup = nameBackup.Text;
-            string Sourcepath = sourcePath.Text;
-            string DetsinationPath = destinationPath.Text;
-            string type = "1";
-            Backup b = new Backup(NameBackup, type, Sourcepath, DetsinationPath, "1");
-            b.backupUserChoice();
-            nameBackup.Clear();
-            BackUpType.SelectedItem = null;
-            sourcePath.Clear();
-            destinationPath.Clear();
+            travaux_sauvegarde display = new travaux_sauvegarde();
+            List<travaux_sauvegarde> save = display.displayOneBackup(saveIndex);
+            nameBackup.Text = save[0].backupName;
+            sourcePath.Text = save[0].sourcePath;
+            destinationPath.Text = save[0].destinationPath;
 
-            travaux_sauvegarde ExeSave = new travaux_sauvegarde();
-            ExeSave.executeSave(saveIndex, "");
+            BackUpType.Text = save[0].type;
+            fileType.Text = save[0].logFileType;
+            List<int> indices = new List<int>();
 
-            LoadSaveList();
+            for (int i = 0; i < saveList.Items.Count; i++)
+            {
+                if (saveList.Items[i] is travaux_sauvegarde backupItem && backupItem.IsSelected)
+                {
+                    indices.Add(i);
+                }
+            }
+            checkedItemIndices = indices.ToArray();
+            travaux_sauvegarde copySave = new travaux_sauvegarde(save[0].backupName, save[0].type, save[0].sourcePath, save[0].destinationPath, save[0].logFileType);
+            Parallel.For(0, checkedItemIndices.Length, i =>
+            {
+                copySave.executeSave(checkedItemIndices[i]);
+            });
+
         }
 
         private void Parcourir_click(object sender, RoutedEventArgs e)
@@ -208,7 +233,6 @@ namespace EasySAVEG6
 
             if (dialog.ShowDialog() == true)
             {
-
                 string selectedFolderPath = dialog.SelectedPath;
                 Button button = sender as Button;
                 if (button != null)
@@ -236,6 +260,14 @@ namespace EasySAVEG6
         private void saveList_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             this.saveIndex = saveList.SelectedIndex;
+            travaux_sauvegarde display = new travaux_sauvegarde();
+            List<travaux_sauvegarde> save = display.displayOneBackup(this.saveIndex);
+            nameBackup.Text = save[0].backupName;
+            sourcePath.Text = save[0].sourcePath;
+            destinationPath.Text = save[0].destinationPath;
+
+            BackUpType.SelectedIndex = int.Parse(save[0].type) - 1;
+            fileType.SelectedIndex = int.Parse(save[0].logFileType) - 1;
         }
     }
 
