@@ -155,7 +155,7 @@ namespace EasySAVEG6
         private void addSave_Click(object sender, RoutedEventArgs e)
         {
             
-                ComboBoxItem selectedComboBoxItem = backupType.SelectedItem as ComboBoxItem;
+                
                 string NameBackup = nameBackup.Text;
                 string Sourcepath = sourcePath.Text;
                 string DetsinationPath = destinationPath.Text;
@@ -163,7 +163,6 @@ namespace EasySAVEG6
                 travaux_sauvegarde k = new travaux_sauvegarde(NameBackup, type, Sourcepath, DetsinationPath, "1");
                 k.save(k.travaux_sauvegardeToJSON(), @"..\..\..\Save\travaux_sauvegarde.json");
                 nameBackup.Clear();
-                backupType.SelectedItem = null;
                 sourcePath.Clear();
                 destinationPath.Clear();
                 LoadSaveList();
@@ -173,7 +172,6 @@ namespace EasySAVEG6
 
         private void Lancer_Click(object sender, RoutedEventArgs e)
         {
-            ComboBoxItem selectedComboBoxItem = backupType.SelectedItem as ComboBoxItem;
             string NameBackup = nameBackup.Text;
             string Sourcepath = sourcePath.Text;
             string DetsinationPath = destinationPath.Text;
@@ -181,7 +179,6 @@ namespace EasySAVEG6
             Backup b = new Backup(NameBackup, type, Sourcepath, DetsinationPath, "1");
             b.backupUserChoice();
             nameBackup.Clear();
-            backupType.SelectedItem = null;
             sourcePath.Clear();
             destinationPath.Clear();
             LoadSaveList();
@@ -208,6 +205,11 @@ namespace EasySAVEG6
                     };
                 }
             }
+        }
+
+        private void MenuItem_Click_3(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 
