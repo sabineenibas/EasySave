@@ -1,6 +1,16 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-
+    <Style x:Key="RoundButtonStyle" TargetType="Button">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="30">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
 
     <ControlTemplate x:Key="Menu_SubMenu_Template"
                      TargetType="{x:Type MenuItem}">
@@ -292,11 +302,11 @@
     <!--// Maximize / Minimize App Button Style //-->
 
     <ImageBrush x:Key="max_def"
-                ImageSource="C:\Users\Pcnet\Source\Repos\EasySaveeee\Assets\max_def.png"
+                ImageSource="C:\Users\Mohamed\source\repos\EasySaveE\Assets\max_mo.png"
                 Stretch="None"/>
 
     <ImageBrush x:Key="max_mo"
-                ImageSource="C:\Users\Pcnet\Source\Repos\EasySaveeee\Assets\max_mo.png"
+                ImageSource="C:\Users\Mohamed\source\repos\EasySaveE\Assets\max_mo.png"
                 Stretch="None"/>
 
     <Style x:Key="MaxBtnStyle"
@@ -358,11 +368,11 @@
     <!--// Close App Button Style //-->
 
     <ImageBrush x:Key="close_def"
-                ImageSource="C:\Users\Pcnet\Source\Repos\EasySaveeee\Assets\shutdown_def.png"
+                ImageSource="C:\Users\Mohamed\source\repos\EasySaveE\Assets\shutdown_def.png"
                 Stretch="None" />
 
     <ImageBrush x:Key="close_mo"
-                ImageSource="C:\Users\Pcnet\Source\Repos\EasySaveeee\Assets\shutdown_mo.png"
+                ImageSource="C:\Users\Mohamed\source\repos\EasySaveE\Assets\shutdown_mo.png"
                 Stretch="None" />
 
     <Style x:Key="CloseBtnStyle"
