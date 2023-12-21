@@ -98,7 +98,10 @@ namespace EasySaveG6.ViewModel
 
         public List<travaux_sauvegarde> displayOneBackup(int index)
         {
-
+            if (index < 0)
+            {
+                index = 0;
+            }
             if (!System.IO.File.Exists(@"..\..\..\Save\travaux_sauvegarde.json"))
             {
                 System.IO.File.Create(@"..\..\..\Save\travaux_sauvegarde.json");

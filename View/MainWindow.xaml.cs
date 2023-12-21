@@ -40,15 +40,10 @@ namespace EasySAVEG6
         public void LoadSaveList()
         {
             List<travaux_sauvegarde> saveListItems = new List<travaux_sauvegarde>();
-
-            Parallel.ForEach(saveInstance.displaybackupByLeriem(), saveItem =>
+            foreach (var saveItem in saveInstance.displaybackupByLeriem())
             {
-                lock (saveListItems)
-                {
-                    saveListItems.Add(saveItem);
-                }
-            });
-
+                saveListItems.Add(saveItem);
+            }
             saveList.ItemsSource = saveListItems;
         }
 
@@ -197,17 +192,11 @@ namespace EasySAVEG6
 
         }
 
-        private void Lancer_Click(object sender, RoutedEventArgs e)
+        private async void Lancer_Click(object sender, RoutedEventArgs e)
         {
-
             travaux_sauvegarde display = new travaux_sauvegarde();
-            List<travaux_sauvegarde> save = display.displayOneBackup(saveIndex);
-            nameBackup.Text = save[0].backupName;
-            sourcePath.Text = save[0].sourcePath;
-            destinationPath.Text = save[0].destinationPath;
+            List<travaux_sauvegarde> save = display.displayBackups();
 
-            BackUpType.Text = save[0].type;
-            fileType.Text = save[0].logFileType;
             List<int> indices = new List<int>();
 
             for (int i = 0; i < saveList.Items.Count; i++)
@@ -219,12 +208,14 @@ namespace EasySAVEG6
             }
             checkedItemIndices = indices.ToArray();
             travaux_sauvegarde copySave = new travaux_sauvegarde(save[0].backupName, save[0].type, save[0].sourcePath, save[0].destinationPath, save[0].logFileType);
-            Parallel.For(0, checkedItemIndices.Length, i =>
-            {
-                copySave.executeSave(checkedItemIndices[i]);
-            });
 
+            foreach (var index in checkedItemIndices)
+            {
+                await Task.Run(() => copySave.executeSave(index));
+            }
         }
+
+
 
         private void Parcourir_click(object sender, RoutedEventArgs e)
         {
