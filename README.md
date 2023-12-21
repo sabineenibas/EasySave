@@ -47,7 +47,7 @@ Features:
 After answering to all this question, you can quit the application by clicking esc
 
 
-#Release Note V3.0: 23/12/2023
+# Release Note V3.0: 23/12/2023
 
 The requested evolutions for this new version EasySave 3.0 are :
 
