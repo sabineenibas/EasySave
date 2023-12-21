@@ -10,6 +10,8 @@
   <ItemGroup>
     <None Remove="eng.jpg" />
     <None Remove="fr.jpg" />
+    <None Remove="View\icons8-add-100 %281%29.png" />
+    <None Remove="View\icons8-add-100.png" />
     <None Remove="View\icons8-add-64.png" />
     <None Remove="View\icons8-pause-48.png" />
     <None Remove="View\icons8-play-94.png" />
@@ -27,6 +29,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="View\icons8-add-100 (1).png" />
+    <Resource Include="View\icons8-add-100.png" />
     <Resource Include="View\icons8-add-64.png" />
     <Resource Include="View\icons8-pause-48.png" />
     <Resource Include="View\icons8-play-94.png" />

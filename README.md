@@ -46,3 +46,56 @@ Features:
 
 After answering to all this question, you can quit the application by clicking esc
 
+
+# Release Note V3.0: 23/12/2023
+
+The requested evolutions for this new version EasySave 3.0 are :
+
+Improvements:
+
+- Parallel backup
+
+- Backup jobs will be done in parallel (no more sequential mode).
+
+- Priority files management
+
+- No backup of a non-priority file can be done as long as there are priority files pending on at least one job. Files whose extensions are declared by the user in a predefined list (present in the general parameters) are considered as priority files.
+
+- Prohibition of simultaneous transfer of files of more than n KB
+
+- In order not to saturate the bandwidth, it is forbidden to transfer at the same time two files whose size is greater than n Kb. (n Kb can be set)
+
+Remark: during the transfer of a file larger than n Kb, the other jobs can transfer files whose sizes are smaller (subject to the respect of the priority files rule)
+
+- Real-time interaction with each job or all jobs ( functinnality in progress )
+
+- For each backup job (or set of jobs), the user must be able to
+
+1. Pause (effective pause after the current file transfer)
+
+2. Play (start or resume a pause)
+
+3. Stop (immediate stop of the work and the task in progress)
+
+- The user must be able to follow the progress of each job in real time (at least a percentage of progress).
+
+- Temporary pause if a business software is detected
+
+- If the software detects the operation of a business software, it must pause the transfer of files
+
+Example: if the calculator application is launched, all the tasks must be paused.
+
+- Remote console ( funtionnality in progress)
+
+- In order to follow in real time the progress of the backups on a remote workstation, you must develop a GUI allowing a user to follow the progress of the backups on a remote workstation but also to act on them
+
+- The minimum specifications of this console are :
+
+1. Design mode: WPF and FrameWork .NetCore
+
+2. Communication via Sockets.
+
+- The application is Mono-instance.
+
+- The application cannot be launched more than once on the same computer
+

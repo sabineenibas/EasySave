@@ -199,6 +199,29 @@ namespace EasySaveG6.ViewModel
             }
         }
 
+
+
+        public void DeleteBackup()
+        {
+            try
+            {
+                // Ajoutez la logique de suppression ici
+                if (Directory.Exists(destinationPath))
+                {
+                    Directory.Delete(destinationPath, true);
+                    MessageBox.Show($"La sauvegarde '{backupName}' a été supprimée avec succès.");
+                }
+                else
+                {
+                    MessageBox.Show($"La sauvegarde '{backupName}' n'existe pas.");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Erreur lors de la suppression de la sauvegarde '{backupName}': {ex.Message}");
+            }
+        }
+
         public void Encrypt(string source, string destination)
         {
             using Process processus = new Process();
