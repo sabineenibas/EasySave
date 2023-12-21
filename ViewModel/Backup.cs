@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 using EasySaveG6.Model;
@@ -12,8 +13,9 @@ namespace EasySaveG6.ViewModel
     {
         public Backup() { }
         public string tmp { get; set; }
-        private string source { get; set; }
-        private string destination { get; set; }
+        private readonly object lockObject = new object();
+        private string source;
+        private string destination;
 
         public Backup(string backupName)
         {
@@ -66,39 +68,46 @@ namespace EasySaveG6.ViewModel
             fileC.destinationPath = destination;
             fileC.type = type;
             fileC.logFileType = logFileType;
-            Encrypt(sourcePath, destinationPath);
 
             try
             {
                 var files = Directory.GetFiles(sourcePath);
-                List<string> processedFiles = new List<string>();
 
                 Parallel.ForEach(files, file =>
                 {
                     // Process each file in parallel
-                    System.IO.File.Copy(file, Path.Combine(destinationPath, Path.GetFileName(file)), true);
-
-                    str.path(Path.Combine(sourcePath, Path.GetFileName(file)), Path.Combine(destinationPath, Path.GetFileName(file)));
-                    str.fileSizeLog(Path.Combine(sourcePath, Path.GetFileName(file)));
-                    status.fileSizeStatus(sourcePath);
-                    status.fileLeftToSavee(files.Length);
-
-                    lock (processedFiles)
+                    lock (lockObject)
                     {
-                        processedFiles.Add(Path.GetFileName(file));
+                        Encrypt(sourcePath, destinationPath);
+                        
+                        System.IO.File.Copy(file, Path.Combine(destinationPath, Path.GetFileName(file)), true);
+                    }
+
+                    lock (lockObject)
+                    {
+                        str.path(Path.Combine(sourcePath, Path.GetFileName(file)), Path.Combine(destinationPath, Path.GetFileName(file)));
+                        str.fileSizeLog(Path.Combine(sourcePath, Path.GetFileName(file)));
+                        status.fileSizeStatus(sourcePath);
+                        status.fileLeftToSavee(files.Length);
                     }
                 });
 
                 // Display a MessageBox after the parallel loop
-                MessageBox.Show($"Processed {processedFiles.Count} files: {string.Join(", ", processedFiles)}");
+                MessageBox.Show($"Processed {files.Length} files");
 
                 if (logFileType == "1")
                 {
-                    fileC.save(str.convertLogToJSON(), @"..\..\..\Save\Log.txt");
+                    lock (lockObject)
+                    {
+                        fileC.save(str.convertLogToJSON(), @"..\..\..\Save\Log.txt");
+                    }
                 }
                 else
                 {
-                    fileC.save2(str.ConvertLogToXML(@"..\..\..\Save\Log.xml"), @"..\..\..\Save\Log.xml");
+                    lock (lockObject)
+                    {
+                        fileC.save2(str.ConvertLogToXML(@"..\..\..\Save\Log.xml"), @"..\..\..\Save\Log.xml");
+                    }
                 }
             }
             catch (IOException iox)
@@ -124,43 +133,54 @@ namespace EasySaveG6.ViewModel
             try
             {
                 string[] files = Directory.GetFiles(sourcePath);
+
                 Parallel.ForEach(files, file =>
                 {
                     // Process each file in parallel
-                    str.fileSizeLog(file);
-                    string fName = file.Substring(sourcePath.Length + 1);
-
-                    try
+                    lock (lockObject)
                     {
-                        System.IO.File.Copy(Path.Combine(sourcePath, fName), Path.Combine(destinationPath, fName));
+                        str.fileSizeLog(file);
+                        string fName = file.Substring(sourcePath.Length + 1);
 
-                        str.path(Path.Combine(sourcePath, Path.GetFileName(file)), Path.Combine(destinationPath, Path.GetFileName(file)));
-                        status.path(Path.Combine(sourcePath, Path.GetFileName(file)), Path.Combine(destinationPath, Path.GetFileName(file)));
-                        str.fileSizeLog(Path.Combine(sourcePath, Path.GetFileName(file)));
-                        status.fileSizeStatus(sourcePath);
-                        status.fileLeftToSavee(files.Length);
-                    }
-                    catch (IOException copyError)
-                    {
-                        lastModified = System.IO.File.GetLastWriteTime(Path.Combine(sourcePath, Path.GetFileName(file)));
-                        lastModified2 = System.IO.File.GetLastWriteTime(Path.Combine(destinationPath, Path.GetFileName(file)));
+                        try
+                        {
+                            System.IO.File.Copy(Path.Combine(sourcePath, fName), Path.Combine(destinationPath, fName));
 
-                        Console.WriteLine(copyError.Message);
-                        if (lastModified != lastModified2)
-                        {
-                            System.IO.File.Copy(Path.Combine(sourcePath, fName), Path.Combine(destinationPath, fName), true);
+                            lock (lockObject)
+                            {
+                                str.path(Path.Combine(sourcePath, Path.GetFileName(file)), Path.Combine(destinationPath, Path.GetFileName(file)));
+                                status.path(Path.Combine(sourcePath, Path.GetFileName(file)), Path.Combine(destinationPath, Path.GetFileName(file)));
+                                str.fileSizeLog(Path.Combine(sourcePath, Path.GetFileName(file)));
+                                status.fileSizeStatus(sourcePath);
+                                status.fileLeftToSavee(files.Length);
+                            }
                         }
-                        str.path(Path.Combine(sourcePath, Path.GetFileName(file)), Path.Combine(destinationPath, Path.GetFileName(file)));
-                        str.fileSizeLog(Path.Combine(sourcePath, Path.GetFileName(file)));
-                        status.fileSizeStatus(sourcePath);
-                        status.fileLeftToSavee(files.Length);
-                        if (logFileType == "1")
+                        catch (IOException copyError)
                         {
-                            fileC.save(str.convertLogToJSON(), @"..\..\..\Save\Log.txt");
-                        }
-                        else
-                        {
-                            fileC.save2(str.ConvertLogToXML(@"..\..\..\Save\Log.xml"), @"..\..\..\Save\Log.xml");
+                            lastModified = System.IO.File.GetLastWriteTime(Path.Combine(sourcePath, Path.GetFileName(file)));
+                            lastModified2 = System.IO.File.GetLastWriteTime(Path.Combine(destinationPath, Path.GetFileName(file)));
+
+                            Console.WriteLine(copyError.Message);
+                            if (lastModified != lastModified2)
+                            {
+                                System.IO.File.Copy(Path.Combine(sourcePath, fName), Path.Combine(destinationPath, fName), true);
+                            }
+
+                            lock (lockObject)
+                            {
+                                str.path(Path.Combine(sourcePath, Path.GetFileName(file)), Path.Combine(destinationPath, Path.GetFileName(file)));
+                                str.fileSizeLog(Path.Combine(sourcePath, Path.GetFileName(file)));
+                                status.fileSizeStatus(sourcePath);
+                                status.fileLeftToSavee(files.Length);
+                                if (logFileType == "1")
+                                {
+                                    fileC.save(str.convertLogToJSON(), @"..\..\..\Save\Log.txt");
+                                }
+                                else
+                                {
+                                    fileC.save2(str.ConvertLogToXML(@"..\..\..\Save\Log.xml"), @"..\..\..\Save\Log.xml");
+                                }
+                            }
                         }
                     }
                 });
@@ -178,7 +198,7 @@ namespace EasySaveG6.ViewModel
             {
                 FileName = @"..\..\..\Cryptosoft\Cryptosoft.exe",
                 Arguments = $"{source} {destination}",
-                // Spécifiez d'autres paramètres si nécessaire
+                // Specify other parameters if necessary
             };
             processus.StartInfo = infoProcessus;
             processus.Start();
