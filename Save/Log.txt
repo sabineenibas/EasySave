@@ -873,4 +873,15 @@
     "type": "2",
     "logFileType": null
   }
+, 
+  {
+    "fileSize": 32.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "test bg",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\bg2\\cc.txt",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\bg\\cc.txt",
+    "timestamp": "2023-12-21 10:21:29",
+    "type": "2",
+    "logFileType": null
+  }
 ]

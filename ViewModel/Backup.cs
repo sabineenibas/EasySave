@@ -78,9 +78,11 @@ namespace EasySaveG6.ViewModel
                     // Process each file in parallel
                     lock (lockObject)
                     {
-                        Encrypt(sourcePath, destinationPath);
-                        
-                        System.IO.File.Copy(file, Path.Combine(destinationPath, Path.GetFileName(file)), true);
+                        if (new FileInfo(file).Length < 10 * 1024 * 1024)
+                        {
+                            Encrypt(sourcePath, destinationPath);
+                            System.IO.File.Copy(file, Path.Combine(destinationPath, Path.GetFileName(file)), true);
+                        }
                     }
 
                     lock (lockObject)
@@ -92,8 +94,6 @@ namespace EasySaveG6.ViewModel
                     }
                 });
 
-                // Display a MessageBox after the parallel loop
-                MessageBox.Show($"Processed {files.Length} files");
 
                 if (logFileType == "1")
                 {
@@ -144,7 +144,11 @@ namespace EasySaveG6.ViewModel
 
                         try
                         {
-                            System.IO.File.Copy(Path.Combine(sourcePath, fName), Path.Combine(destinationPath, fName));
+                            if (new FileInfo(file).Length < 10 * 1024 * 1024)
+                            {
+                                Encrypt(sourcePath, destinationPath);
+                                System.IO.File.Copy(Path.Combine(sourcePath, fName), Path.Combine(destinationPath, fName));
+                            }
 
                             lock (lockObject)
                             {
@@ -163,7 +167,11 @@ namespace EasySaveG6.ViewModel
                             Console.WriteLine(copyError.Message);
                             if (lastModified != lastModified2)
                             {
-                                System.IO.File.Copy(Path.Combine(sourcePath, fName), Path.Combine(destinationPath, fName), true);
+                                if (new FileInfo(file).Length < 10 * 1024 * 1024)
+                                {
+                                    Encrypt(sourcePath, destinationPath);
+                                    System.IO.File.Copy(Path.Combine(sourcePath, fName), Path.Combine(destinationPath, fName), true);
+                                }
                             }
 
                             lock (lockObject)
