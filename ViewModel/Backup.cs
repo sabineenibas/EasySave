@@ -57,6 +57,11 @@ namespace EasySaveG6.ViewModel
                 Differential();
             }
         }
+        static bool IsCalculatorRunning()
+        {
+            Process[] processes = Process.GetProcessesByName("CalculatorApp");
+            return processes.Length > 0;
+        }
 
         public void Full()
         {
@@ -75,6 +80,13 @@ namespace EasySaveG6.ViewModel
 
                 Parallel.ForEach(files, file =>
                 {
+                    if (IsCalculatorRunning())
+                    {
+                        while (IsCalculatorRunning())
+                        {
+                            MessageBox.Show("[PAUSE] La calculatrice est en cours d'exécution.");
+                        }
+                    }
                     // Process each file in parallel
                     lock (lockObject)
                     {
@@ -136,6 +148,13 @@ namespace EasySaveG6.ViewModel
 
                 Parallel.ForEach(files, file =>
                 {
+                    if (IsCalculatorRunning())
+                    {
+                        while (IsCalculatorRunning())
+                        {
+                            MessageBox.Show("[PAUSE] La calculatrice est en cours d'exécution.");
+                        }
+                    }
                     // Process each file in parallel
                     lock (lockObject)
                     {
