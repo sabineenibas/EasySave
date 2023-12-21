@@ -24,7 +24,7 @@ namespace EasySAVEG6
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class Menu : Window
+    public partial class Menu : System.Windows.Window
     {
         travaux_sauvegarde saveInstance = new travaux_sauvegarde();
         private int saveIndex { get; set; }
@@ -226,11 +226,11 @@ namespace EasySAVEG6
             if (dialog.ShowDialog() == true)
             {
                 string selectedFolderPath = dialog.SelectedPath;
-                Button button = sender as Button;
+                System.Windows.Controls.Button button = sender as System.Windows.Controls.Button;
                 if (button != null)
                 {
                     string buttonTag = button.Tag.ToString();
-                    TextBox associatedTextBox = this.FindName(buttonTag) as TextBox;
+                    System.Windows.Controls.TextBox associatedTextBox = this.FindName(buttonTag) as System.Windows.Controls.TextBox;
                     if (associatedTextBox != null)
                     {
                         associatedTextBox.Text = selectedFolderPath;

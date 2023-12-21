@@ -1019,4 +1019,40 @@
     <fileSize>60</fileSize>
     <timeTrensfertFile>PT0S</timeTrensfertFile>
   </Log>
+  <Log>
+    <backupName>CCCCCC2222543534</backupName>
+    <destinationPath>C:\Users\Pcnet\Desktop\cc2\Livrable3_G5_Administrtion_SI.docx</destinationPath>
+    <sourcePath>C:\Users\Pcnet\Desktop\cc\Livrable3_G5_Administrtion_SI.docx</sourcePath>
+    <timestamp>2023-12-21 10:35:16</timestamp>
+    <type>1</type>
+    <fileSize>60</fileSize>
+    <timeTrensfertFile>PT0S</timeTrensfertFile>
+  </Log>
+  <Log>
+    <backupName>AAAAAAAAAAAA</backupName>
+    <destinationPath>C:\Users\Pcnet\Desktop\cc2\Livrable3_G5_Administrtion_SI.docx</destinationPath>
+    <sourcePath>C:\Users\Pcnet\Desktop\cc\Livrable3_G5_Administrtion_SI.docx</sourcePath>
+    <timestamp>2023-12-21 10:35:16</timestamp>
+    <type>1</type>
+    <fileSize>60</fileSize>
+    <timeTrensfertFile>PT0S</timeTrensfertFile>
+  </Log>
+  <Log>
+    <backupName>CCCCCC2222543534</backupName>
+    <destinationPath>C:\Users\Pcnet\Desktop\cc2\Livrable3_G5_Administrtion_SI.docx</destinationPath>
+    <sourcePath>C:\Users\Pcnet\Desktop\cc\Livrable3_G5_Administrtion_SI.docx</sourcePath>
+    <timestamp>2023-12-21 10:35:34</timestamp>
+    <type>1</type>
+    <fileSize>60</fileSize>
+    <timeTrensfertFile>PT0S</timeTrensfertFile>
+  </Log>
+  <Log>
+    <backupName>AAAAAAAAAAAA</backupName>
+    <destinationPath>C:\Users\Pcnet\Desktop\cc2\Livrable3_G5_Administrtion_SI.docx</destinationPath>
+    <sourcePath>C:\Users\Pcnet\Desktop\cc\Livrable3_G5_Administrtion_SI.docx</sourcePath>
+    <timestamp>2023-12-21 10:35:34</timestamp>
+    <type>1</type>
+    <fileSize>60</fileSize>
+    <timeTrensfertFile>PT0S</timeTrensfertFile>
+  </Log>
 </Log>
