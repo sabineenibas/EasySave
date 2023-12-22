@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
+using System.Resources;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
@@ -70,7 +71,7 @@ namespace EasySaveG6.ViewModel
             EasySaveG6.Model.File fileC = Log.Instance;
             fileC.backupName = backupName;
             fileC.sourcePath = sourcePath;
-            fileC.destinationPath = destination;
+            fileC.destinationPath = destinationPath;
             fileC.type = type;
             fileC.logFileType = logFileType;
 
@@ -87,13 +88,39 @@ namespace EasySaveG6.ViewModel
                             MessageBox.Show("[PAUSE] La calculatrice est en cours d'exécution.");
                         }
                     }
-                    // Process each file in parallel
+
+                    string pr;
+                    string[] prioritaires;
                     lock (lockObject)
                     {
-                        if (new FileInfo(file).Length < 10 * 1024 * 1024)
+                        pr = System.IO.File.ReadAllText(@"..\..\..\Save\prioritaire.txt"); // Use ReadAllText to get the content of the file
+                        prioritaires = pr.Split(", ");
+                    }
+
+                    string fileExtension = Path.GetExtension(file);
+                    lock (lockObject)
+                    {
+                        for (int ext = 0; ext < prioritaires.Length; ext++)
                         {
-                            Encrypt(sourcePath, destinationPath);
-                            System.IO.File.Copy(file, Path.Combine(destinationPath, Path.GetFileName(file)), true);
+                            if (fileExtension == prioritaires[ext])
+                            {
+                                if (new FileInfo(file).Length < 10 * 1024 * 1024)
+                                {
+                                    Encrypt(sourcePath, destinationPath);
+                                    System.IO.File.Copy(file, Path.Combine(destinationPath, Path.GetFileName(file)), true);
+                                }
+                            }
+                        }
+                        for (int ext = 0; ext < prioritaires.Length; ext++)
+                        {
+                            if (fileExtension != prioritaires[ext])
+                            {
+                                if (new FileInfo(file).Length < 10 * 1024 * 1024)
+                                {
+                                    Encrypt(sourcePath, destinationPath);
+                                    System.IO.File.Copy(file, Path.Combine(destinationPath, Path.GetFileName(file)), true);
+                                }
+                            }
                         }
                     }
 
@@ -105,7 +132,6 @@ namespace EasySaveG6.ViewModel
                         status.fileLeftToSavee(files.Length);
                     }
                 });
-
 
                 if (logFileType == "1")
                 {
@@ -127,6 +153,7 @@ namespace EasySaveG6.ViewModel
                 Console.WriteLine(iox.Message);
             }
         }
+
 
         public void Differential()
         {
@@ -163,10 +190,40 @@ namespace EasySaveG6.ViewModel
 
                         try
                         {
-                            if (new FileInfo(file).Length < 10 * 1024 * 1024)
+                            string pr;
+                            string[] prioritaires;
+                            lock (lockObject)
                             {
-                                Encrypt(sourcePath, destinationPath);
-                                System.IO.File.Copy(Path.Combine(sourcePath, fName), Path.Combine(destinationPath, fName));
+                                pr = System.IO.File.ReadAllText(@"..\..\..\Save\prioritaire.txt"); // Use ReadAllText to get the content of the file
+                                prioritaires = pr.Split(", ");
+                            }
+
+                            string fileExtension = Path.GetExtension(file);
+
+                            lock (lockObject)
+                            {
+                                for (int ext = 0; ext < prioritaires.Length; ext++)
+                                {
+                                    if (fileExtension == prioritaires[ext])
+                                    {
+                                        if (new FileInfo(file).Length < 10 * 1024 * 1024)
+                                        {
+                                            Encrypt(sourcePath, destinationPath);
+                                            System.IO.File.Copy(file, Path.Combine(destinationPath, Path.GetFileName(file)));
+                                        }
+                                    }
+                                }
+                                for (int ext = 0; ext < prioritaires.Length; ext++)
+                                {
+                                    if (fileExtension != prioritaires[ext])
+                                    {
+                                        if (new FileInfo(file).Length < 10 * 1024 * 1024)
+                                        {
+                                            Encrypt(sourcePath, destinationPath);
+                                            System.IO.File.Copy(file, Path.Combine(destinationPath, Path.GetFileName(file)));
+                                        }
+                                    }
+                                }
                             }
 
                             lock (lockObject)
@@ -186,10 +243,40 @@ namespace EasySaveG6.ViewModel
                             Console.WriteLine(copyError.Message);
                             if (lastModified != lastModified2)
                             {
-                                if (new FileInfo(file).Length < 10 * 1024 * 1024)
+                                string pr;
+                                string[] prioritaires;
+                                lock (lockObject)
                                 {
-                                    Encrypt(sourcePath, destinationPath);
-                                    System.IO.File.Copy(Path.Combine(sourcePath, fName), Path.Combine(destinationPath, fName), true);
+                                    pr = System.IO.File.ReadAllText(@"..\..\..\Save\prioritaire.txt"); // Use ReadAllText to get the content of the file
+                                    prioritaires = pr.Split(", ");
+                                }
+
+                                string fileExtension = Path.GetExtension(file);
+
+                                lock (lockObject)
+                                {
+                                    for (int ext = 0; ext < prioritaires.Length; ext++)
+                                    {
+                                        if (fileExtension == prioritaires[ext])
+                                        {
+                                            if (new FileInfo(file).Length < 10 * 1024 * 1024)
+                                            {
+                                                Encrypt(sourcePath, destinationPath);
+                                                System.IO.File.Copy(file, Path.Combine(destinationPath, Path.GetFileName(file)), true);
+                                            }
+                                        }
+                                    }
+                                    for (int ext = 0; ext < prioritaires.Length; ext++)
+                                    {
+                                        if (fileExtension != prioritaires[ext])
+                                        {
+                                            if (new FileInfo(file).Length < 10 * 1024 * 1024)
+                                            {
+                                                Encrypt(sourcePath, destinationPath);
+                                                System.IO.File.Copy(file, Path.Combine(destinationPath, Path.GetFileName(file)), true);
+                                            }
+                                        }
+                                    }
                                 }
                             }
 

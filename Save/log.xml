@@ -1190,4 +1190,31 @@
     <fileSize>60</fileSize>
     <timeTrensfertFile>PT0S</timeTrensfertFile>
   </Log>
+  <Log>
+    <backupName>CCCCCC2222543534</backupName>
+    <destinationPath>C:\Users\Pcnet\Desktop\cc2\Rapport de stage Talaoubrid Minel A2.pdf</destinationPath>
+    <sourcePath>C:\Users\Pcnet\Desktop\cc\Rapport de stage Talaoubrid Minel A2.pdf</sourcePath>
+    <timestamp>2023-12-22 06:58:18</timestamp>
+    <type>1</type>
+    <fileSize>66</fileSize>
+    <timeTrensfertFile>PT0S</timeTrensfertFile>
+  </Log>
+  <Log>
+    <backupName>AAAAAAAAAAAA</backupName>
+    <destinationPath>C:\Users\Pcnet\Desktop\cc2\Livrable2_G5_Administrtion_SI .docx</destinationPath>
+    <sourcePath>C:\Users\Pcnet\Desktop\cc\Livrable2_G5_Administrtion_SI .docx</sourcePath>
+    <timestamp>2023-12-22 06:58:19</timestamp>
+    <type>1</type>
+    <fileSize>61</fileSize>
+    <timeTrensfertFile>PT0S</timeTrensfertFile>
+  </Log>
+  <Log>
+    <backupName>AAAAAAAAAAAA</backupName>
+    <destinationPath>C:\Users\Pcnet\Desktop\cc2\uhcru.pdf</destinationPath>
+    <sourcePath>C:\Users\Pcnet\Desktop\cc\uhcru.pdf</sourcePath>
+    <timestamp>2023-12-22 07:08:25</timestamp>
+    <type>1</type>
+    <fileSize>35</fileSize>
+    <timeTrensfertFile>PT0S</timeTrensfertFile>
+  </Log>
 </Log>
