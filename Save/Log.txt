@@ -1082,4 +1082,1863 @@
     "type": "2",
     "logFileType": null
   }
+, 
+  {
+    "fileSize": 60.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\Livrable3_G5_Administrtion_SI.docx",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\Livrable3_G5_Administrtion_SI.docx",
+    "timestamp": "2023-12-23 09:36:08",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 35.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\uhcru.pdf",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\uhcru.pdf",
+    "timestamp": "2023-12-23 09:36:08",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 66.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\Rapport de stage Talaoubrid Minel A2.pdf",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\Rapport de stage Talaoubrid Minel A2.pdf",
+    "timestamp": "2023-12-23 09:36:08",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 58.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\centreon-vbox-vm-23_10-1.el8.ova",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\centreon-vbox-vm-23_10-1.el8.ova",
+    "timestamp": "2023-12-23 09:36:08",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 61.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\Livrable2_G5_Administrtion_SI .docx",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\Livrable2_G5_Administrtion_SI .docx",
+    "timestamp": "2023-12-23 09:36:08",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 35.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\uhcru.pdf",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\uhcru.pdf",
+    "timestamp": "2023-12-23 09:54:51",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 63.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\100mo - Copie - Copie - Copie (4).txt",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\100mo - Copie - Copie - Copie (4).txt",
+    "timestamp": "2023-12-23 09:54:51",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 63.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\100mo - Copie - Copie - Copie (6).txt",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\100mo - Copie - Copie - Copie (6).txt",
+    "timestamp": "2023-12-23 09:54:51",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 64.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\100mo - Copie - Copie - Copie (10).txt",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\100mo - Copie - Copie - Copie (10).txt",
+    "timestamp": "2023-12-23 09:54:51",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 63.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\100mo - Copie - Copie - Copie (5).txt",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\100mo - Copie - Copie - Copie (5).txt",
+    "timestamp": "2023-12-23 09:54:51",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 63.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\100mo - Copie - Copie - Copie (2).txt",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\100mo - Copie - Copie - Copie (2).txt",
+    "timestamp": "2023-12-23 09:54:51",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 63.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\100mo - Copie - Copie - Copie (7).txt",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\100mo - Copie - Copie - Copie (7).txt",
+    "timestamp": "2023-12-23 09:54:51",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 63.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\100mo - Copie - Copie - Copie (9).txt",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\100mo - Copie - Copie - Copie (9).txt",
+    "timestamp": "2023-12-23 09:54:52",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 63.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\100mo - Copie - Copie - Copie (3).txt",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\100mo - Copie - Copie - Copie (3).txt",
+    "timestamp": "2023-12-23 09:54:52",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 61.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\Livrable2_G5_Administrtion_SI .docx",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\Livrable2_G5_Administrtion_SI .docx",
+    "timestamp": "2023-12-23 09:54:52",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 63.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\100mo - Copie - Copie - Copie (8).txt",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\100mo - Copie - Copie - Copie (8).txt",
+    "timestamp": "2023-12-23 09:54:52",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 66.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\Rapport de stage Talaoubrid Minel A2.pdf",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\Rapport de stage Talaoubrid Minel A2.pdf",
+    "timestamp": "2023-12-23 09:54:52",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 51.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\100mo - Copie - Copie.txt",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\100mo - Copie - Copie.txt",
+    "timestamp": "2023-12-23 09:54:53",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 59.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\100mo - Copie - Copie - Copie.txt",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\100mo - Copie - Copie - Copie.txt",
+    "timestamp": "2023-12-23 09:54:53",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 58.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\centreon-vbox-vm-23_10-1.el8.ova",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\centreon-vbox-vm-23_10-1.el8.ova",
+    "timestamp": "2023-12-23 09:54:53",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 60.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\Livrable3_G5_Administrtion_SI.docx",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\Livrable3_G5_Administrtion_SI.docx",
+    "timestamp": "2023-12-23 09:54:53",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 64.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\100mo - Copie - Copie - Copie (11).txt",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\100mo - Copie - Copie - Copie (11).txt",
+    "timestamp": "2023-12-23 09:54:53",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 64.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\100mo - Copie - Copie - Copie (10).txt",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\100mo - Copie - Copie - Copie (10).txt",
+    "timestamp": "2023-12-23 09:55:02",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 58.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\centreon-vbox-vm-23_10-1.el8.ova",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\centreon-vbox-vm-23_10-1.el8.ova",
+    "timestamp": "2023-12-23 09:55:02",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 63.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\100mo - Copie - Copie - Copie (8).txt",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\100mo - Copie - Copie - Copie (8).txt",
+    "timestamp": "2023-12-23 09:55:02",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 59.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\100mo - Copie - Copie - Copie.txt",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\100mo - Copie - Copie - Copie.txt",
+    "timestamp": "2023-12-23 09:55:02",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 63.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\100mo - Copie - Copie - Copie (6).txt",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\100mo - Copie - Copie - Copie (6).txt",
+    "timestamp": "2023-12-23 09:55:02",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 51.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\100mo - Copie - Copie.txt",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\100mo - Copie - Copie.txt",
+    "timestamp": "2023-12-23 09:55:02",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 61.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\Livrable2_G5_Administrtion_SI .docx",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\Livrable2_G5_Administrtion_SI .docx",
+    "timestamp": "2023-12-23 09:55:02",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 63.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\100mo - Copie - Copie - Copie (9).txt",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\100mo - Copie - Copie - Copie (9).txt",
+    "timestamp": "2023-12-23 09:55:03",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 63.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\100mo - Copie - Copie - Copie (7).txt",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\100mo - Copie - Copie - Copie (7).txt",
+    "timestamp": "2023-12-23 09:55:03",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 35.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\uhcru.pdf",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\uhcru.pdf",
+    "timestamp": "2023-12-23 09:55:03",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 66.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\Rapport de stage Talaoubrid Minel A2.pdf",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\Rapport de stage Talaoubrid Minel A2.pdf",
+    "timestamp": "2023-12-23 09:55:03",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 63.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\100mo - Copie - Copie - Copie (2).txt",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\100mo - Copie - Copie - Copie (2).txt",
+    "timestamp": "2023-12-23 09:55:03",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 63.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\100mo - Copie - Copie - Copie (3).txt",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\100mo - Copie - Copie - Copie (3).txt",
+    "timestamp": "2023-12-23 09:55:03",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 63.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\100mo - Copie - Copie - Copie (5).txt",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\100mo - Copie - Copie - Copie (5).txt",
+    "timestamp": "2023-12-23 09:55:03",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 63.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\100mo - Copie - Copie - Copie (4).txt",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\100mo - Copie - Copie - Copie (4).txt",
+    "timestamp": "2023-12-23 09:55:03",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 60.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\Livrable3_G5_Administrtion_SI.docx",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\Livrable3_G5_Administrtion_SI.docx",
+    "timestamp": "2023-12-23 09:55:03",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 64.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\100mo - Copie - Copie - Copie (11).txt",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\100mo - Copie - Copie - Copie (11).txt",
+    "timestamp": "2023-12-23 09:55:03",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 64.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\100mo - Copie - Copie - Copie (10).txt",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\100mo - Copie - Copie - Copie (10).txt",
+    "timestamp": "2023-12-23 09:55:08",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 63.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\100mo - Copie - Copie - Copie (8).txt",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\100mo - Copie - Copie - Copie (8).txt",
+    "timestamp": "2023-12-23 09:55:08",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 59.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\100mo - Copie - Copie - Copie.txt",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\100mo - Copie - Copie - Copie.txt",
+    "timestamp": "2023-12-23 09:55:08",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 63.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\100mo - Copie - Copie - Copie (2).txt",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\100mo - Copie - Copie - Copie (2).txt",
+    "timestamp": "2023-12-23 09:55:08",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 63.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\100mo - Copie - Copie - Copie (3).txt",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\100mo - Copie - Copie - Copie (3).txt",
+    "timestamp": "2023-12-23 09:55:08",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 63.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\100mo - Copie - Copie - Copie (9).txt",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\100mo - Copie - Copie - Copie (9).txt",
+    "timestamp": "2023-12-23 09:55:08",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 51.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\100mo - Copie - Copie.txt",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\100mo - Copie - Copie.txt",
+    "timestamp": "2023-12-23 09:55:08",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 64.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\100mo - Copie - Copie - Copie (11).txt",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\100mo - Copie - Copie - Copie (11).txt",
+    "timestamp": "2023-12-23 09:55:08",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 63.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\100mo - Copie - Copie - Copie (6).txt",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\100mo - Copie - Copie - Copie (6).txt",
+    "timestamp": "2023-12-23 09:55:08",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 63.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\100mo - Copie - Copie - Copie (7).txt",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\100mo - Copie - Copie - Copie (7).txt",
+    "timestamp": "2023-12-23 09:55:08",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 61.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\Livrable2_G5_Administrtion_SI .docx",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\Livrable2_G5_Administrtion_SI .docx",
+    "timestamp": "2023-12-23 09:55:08",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 66.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\Rapport de stage Talaoubrid Minel A2.pdf",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\Rapport de stage Talaoubrid Minel A2.pdf",
+    "timestamp": "2023-12-23 09:55:08",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 63.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\100mo - Copie - Copie - Copie (5).txt",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\100mo - Copie - Copie - Copie (5).txt",
+    "timestamp": "2023-12-23 09:55:09",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 60.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\Livrable3_G5_Administrtion_SI.docx",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\Livrable3_G5_Administrtion_SI.docx",
+    "timestamp": "2023-12-23 09:55:09",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 58.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\centreon-vbox-vm-23_10-1.el8.ova",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\centreon-vbox-vm-23_10-1.el8.ova",
+    "timestamp": "2023-12-23 09:55:09",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 63.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\100mo - Copie - Copie - Copie (4).txt",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\100mo - Copie - Copie - Copie (4).txt",
+    "timestamp": "2023-12-23 09:55:09",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 35.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\uhcru.pdf",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\uhcru.pdf",
+    "timestamp": "2023-12-23 09:55:09",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 63.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\100mo - Copie - Copie - Copie (6).txt",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\100mo - Copie - Copie - Copie (6).txt",
+    "timestamp": "2023-12-23 09:55:24",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 64.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\100mo - Copie - Copie - Copie (10).txt",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\100mo - Copie - Copie - Copie (10).txt",
+    "timestamp": "2023-12-23 09:55:24",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 63.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\100mo - Copie - Copie - Copie (4).txt",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\100mo - Copie - Copie - Copie (4).txt",
+    "timestamp": "2023-12-23 09:55:24",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 58.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\centreon-vbox-vm-23_10-1.el8.ova",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\centreon-vbox-vm-23_10-1.el8.ova",
+    "timestamp": "2023-12-23 09:55:24",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 64.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\100mo - Copie - Copie - Copie (11).txt",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\100mo - Copie - Copie - Copie (11).txt",
+    "timestamp": "2023-12-23 09:55:24",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 63.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\100mo - Copie - Copie - Copie (5).txt",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\100mo - Copie - Copie - Copie (5).txt",
+    "timestamp": "2023-12-23 09:55:24",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 63.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\100mo - Copie - Copie - Copie (3).txt",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\100mo - Copie - Copie - Copie (3).txt",
+    "timestamp": "2023-12-23 09:55:24",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 61.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\Livrable2_G5_Administrtion_SI .docx",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\Livrable2_G5_Administrtion_SI .docx",
+    "timestamp": "2023-12-23 09:55:25",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 59.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\100mo - Copie - Copie - Copie.txt",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\100mo - Copie - Copie - Copie.txt",
+    "timestamp": "2023-12-23 09:55:25",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 63.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\100mo - Copie - Copie - Copie (9).txt",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\100mo - Copie - Copie - Copie (9).txt",
+    "timestamp": "2023-12-23 09:55:25",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 51.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\100mo - Copie - Copie.txt",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\100mo - Copie - Copie.txt",
+    "timestamp": "2023-12-23 09:55:25",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 66.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\Rapport de stage Talaoubrid Minel A2.pdf",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\Rapport de stage Talaoubrid Minel A2.pdf",
+    "timestamp": "2023-12-23 09:55:25",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 63.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\100mo - Copie - Copie - Copie (7).txt",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\100mo - Copie - Copie - Copie (7).txt",
+    "timestamp": "2023-12-23 09:55:25",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 35.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\uhcru.pdf",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\uhcru.pdf",
+    "timestamp": "2023-12-23 09:55:25",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 63.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\100mo - Copie - Copie - Copie (8).txt",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\100mo - Copie - Copie - Copie (8).txt",
+    "timestamp": "2023-12-23 09:55:25",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 63.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\100mo - Copie - Copie - Copie (2).txt",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\100mo - Copie - Copie - Copie (2).txt",
+    "timestamp": "2023-12-23 09:55:25",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 60.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\Livrable3_G5_Administrtion_SI.docx",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\Livrable3_G5_Administrtion_SI.docx",
+    "timestamp": "2023-12-23 09:55:25",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 64.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\100mo - Copie - Copie - Copie (10).txt",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\100mo - Copie - Copie - Copie (10).txt",
+    "timestamp": "2023-12-23 09:55:37",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 64.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\100mo - Copie - Copie - Copie (11).txt",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\100mo - Copie - Copie - Copie (11).txt",
+    "timestamp": "2023-12-23 09:55:37",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 63.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\100mo - Copie - Copie - Copie (2).txt",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\100mo - Copie - Copie - Copie (2).txt",
+    "timestamp": "2023-12-23 09:55:37",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 63.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\100mo - Copie - Copie - Copie (3).txt",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\100mo - Copie - Copie - Copie (3).txt",
+    "timestamp": "2023-12-23 09:55:37",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 63.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\100mo - Copie - Copie - Copie (4).txt",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\100mo - Copie - Copie - Copie (4).txt",
+    "timestamp": "2023-12-23 09:55:37",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 63.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\100mo - Copie - Copie - Copie (5).txt",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\100mo - Copie - Copie - Copie (5).txt",
+    "timestamp": "2023-12-23 09:55:38",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 63.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\100mo - Copie - Copie - Copie (6).txt",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\100mo - Copie - Copie - Copie (6).txt",
+    "timestamp": "2023-12-23 09:55:38",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 63.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\100mo - Copie - Copie - Copie (7).txt",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\100mo - Copie - Copie - Copie (7).txt",
+    "timestamp": "2023-12-23 09:55:38",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 63.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\100mo - Copie - Copie - Copie (8).txt",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\100mo - Copie - Copie - Copie (8).txt",
+    "timestamp": "2023-12-23 09:55:38",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 63.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\100mo - Copie - Copie - Copie (9).txt",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\100mo - Copie - Copie - Copie (9).txt",
+    "timestamp": "2023-12-23 09:55:38",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 59.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\100mo - Copie - Copie - Copie.txt",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\100mo - Copie - Copie - Copie.txt",
+    "timestamp": "2023-12-23 09:55:38",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 51.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\100mo - Copie - Copie.txt",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\100mo - Copie - Copie.txt",
+    "timestamp": "2023-12-23 09:55:38",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 58.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\centreon-vbox-vm-23_10-1.el8.ova",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\centreon-vbox-vm-23_10-1.el8.ova",
+    "timestamp": "2023-12-23 09:55:38",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 61.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\Livrable2_G5_Administrtion_SI .docx",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\Livrable2_G5_Administrtion_SI .docx",
+    "timestamp": "2023-12-23 09:55:38",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 60.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\Livrable3_G5_Administrtion_SI.docx",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\Livrable3_G5_Administrtion_SI.docx",
+    "timestamp": "2023-12-23 09:55:38",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 66.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\Rapport de stage Talaoubrid Minel A2.pdf",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\Rapport de stage Talaoubrid Minel A2.pdf",
+    "timestamp": "2023-12-23 09:55:38",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 35.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\uhcru.pdf",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\uhcru.pdf",
+    "timestamp": "2023-12-23 09:55:38",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 64.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\100mo - Copie - Copie - Copie (10).txt",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\100mo - Copie - Copie - Copie (10).txt",
+    "timestamp": "2023-12-23 09:55:38",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 64.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\100mo - Copie - Copie - Copie (11).txt",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\100mo - Copie - Copie - Copie (11).txt",
+    "timestamp": "2023-12-23 09:55:38",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 63.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\100mo - Copie - Copie - Copie (2).txt",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\100mo - Copie - Copie - Copie (2).txt",
+    "timestamp": "2023-12-23 09:55:38",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 63.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\100mo - Copie - Copie - Copie (3).txt",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\100mo - Copie - Copie - Copie (3).txt",
+    "timestamp": "2023-12-23 09:55:39",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 63.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\100mo - Copie - Copie - Copie (4).txt",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\100mo - Copie - Copie - Copie (4).txt",
+    "timestamp": "2023-12-23 09:55:39",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 63.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\100mo - Copie - Copie - Copie (5).txt",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\100mo - Copie - Copie - Copie (5).txt",
+    "timestamp": "2023-12-23 09:55:39",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 63.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\100mo - Copie - Copie - Copie (6).txt",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\100mo - Copie - Copie - Copie (6).txt",
+    "timestamp": "2023-12-23 09:55:39",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 63.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\100mo - Copie - Copie - Copie (7).txt",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\100mo - Copie - Copie - Copie (7).txt",
+    "timestamp": "2023-12-23 09:55:39",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 63.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\100mo - Copie - Copie - Copie (8).txt",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\100mo - Copie - Copie - Copie (8).txt",
+    "timestamp": "2023-12-23 09:55:39",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 63.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\100mo - Copie - Copie - Copie (9).txt",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\100mo - Copie - Copie - Copie (9).txt",
+    "timestamp": "2023-12-23 09:55:39",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 59.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\100mo - Copie - Copie - Copie.txt",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\100mo - Copie - Copie - Copie.txt",
+    "timestamp": "2023-12-23 09:55:39",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 51.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\100mo - Copie - Copie.txt",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\100mo - Copie - Copie.txt",
+    "timestamp": "2023-12-23 09:55:39",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 58.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\centreon-vbox-vm-23_10-1.el8.ova",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\centreon-vbox-vm-23_10-1.el8.ova",
+    "timestamp": "2023-12-23 09:55:39",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 61.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\Livrable2_G5_Administrtion_SI .docx",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\Livrable2_G5_Administrtion_SI .docx",
+    "timestamp": "2023-12-23 09:55:39",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 60.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\Livrable3_G5_Administrtion_SI.docx",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\Livrable3_G5_Administrtion_SI.docx",
+    "timestamp": "2023-12-23 09:55:39",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 66.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\Rapport de stage Talaoubrid Minel A2.pdf",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\Rapport de stage Talaoubrid Minel A2.pdf",
+    "timestamp": "2023-12-23 09:55:39",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 35.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\uhcru.pdf",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\uhcru.pdf",
+    "timestamp": "2023-12-23 09:55:40",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 60.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\Livrable3_G5_Administrtion_SI.docx",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\Livrable3_G5_Administrtion_SI.docx",
+    "timestamp": "2023-12-23 09:56:24",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 64.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\100mo - Copie - Copie - Copie (10).txt",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\100mo - Copie - Copie - Copie (10).txt",
+    "timestamp": "2023-12-23 09:56:24",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 63.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\100mo - Copie - Copie - Copie (4).txt",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\100mo - Copie - Copie - Copie (4).txt",
+    "timestamp": "2023-12-23 09:56:24",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 63.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\100mo - Copie - Copie - Copie (6).txt",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\100mo - Copie - Copie - Copie (6).txt",
+    "timestamp": "2023-12-23 09:56:24",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 63.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\100mo - Copie - Copie - Copie (5).txt",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\100mo - Copie - Copie - Copie (5).txt",
+    "timestamp": "2023-12-23 09:56:25",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 63.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\100mo - Copie - Copie - Copie (7).txt",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\100mo - Copie - Copie - Copie (7).txt",
+    "timestamp": "2023-12-23 09:56:25",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 63.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\100mo - Copie - Copie - Copie (2).txt",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\100mo - Copie - Copie - Copie (2).txt",
+    "timestamp": "2023-12-23 09:56:25",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 64.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\100mo - Copie - Copie - Copie (11).txt",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\100mo - Copie - Copie - Copie (11).txt",
+    "timestamp": "2023-12-23 09:56:25",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 63.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\100mo - Copie - Copie - Copie (9).txt",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\100mo - Copie - Copie - Copie (9).txt",
+    "timestamp": "2023-12-23 09:56:25",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 51.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\100mo - Copie - Copie.txt",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\100mo - Copie - Copie.txt",
+    "timestamp": "2023-12-23 09:56:25",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 63.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\100mo - Copie - Copie - Copie (8).txt",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\100mo - Copie - Copie - Copie (8).txt",
+    "timestamp": "2023-12-23 09:56:25",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 61.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\Livrable2_G5_Administrtion_SI .docx",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\Livrable2_G5_Administrtion_SI .docx",
+    "timestamp": "2023-12-23 09:56:25",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 63.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\100mo - Copie - Copie - Copie (3).txt",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\100mo - Copie - Copie - Copie (3).txt",
+    "timestamp": "2023-12-23 09:56:25",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 59.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\100mo - Copie - Copie - Copie.txt",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\100mo - Copie - Copie - Copie.txt",
+    "timestamp": "2023-12-23 09:56:25",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 58.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\centreon-vbox-vm-23_10-1.el8.ova",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\centreon-vbox-vm-23_10-1.el8.ova",
+    "timestamp": "2023-12-23 09:56:25",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 35.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\uhcru.pdf",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\uhcru.pdf",
+    "timestamp": "2023-12-23 09:56:25",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 66.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\Rapport de stage Talaoubrid Minel A2.pdf",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\Rapport de stage Talaoubrid Minel A2.pdf",
+    "timestamp": "2023-12-23 09:56:25",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 60.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "fdslfsdf5000000000000",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\Livrable3_G5_Administrtion_SI.docx",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\Livrable3_G5_Administrtion_SI.docx",
+    "timestamp": "2023-12-23 10:27:41",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 63.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "fdslfsdf5000000000000",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\100mo - Copie - Copie - Copie (6).txt",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\100mo - Copie - Copie - Copie (6).txt",
+    "timestamp": "2023-12-23 10:27:41",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 63.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "fdslfsdf5000000000000",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\100mo - Copie - Copie - Copie (2).txt",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\100mo - Copie - Copie - Copie (2).txt",
+    "timestamp": "2023-12-23 10:27:41",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 63.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "fdslfsdf5000000000000",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\100mo - Copie - Copie - Copie (4).txt",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\100mo - Copie - Copie - Copie (4).txt",
+    "timestamp": "2023-12-23 10:27:41",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 63.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "fdslfsdf5000000000000",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\100mo - Copie - Copie - Copie (8).txt",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\100mo - Copie - Copie - Copie (8).txt",
+    "timestamp": "2023-12-23 10:27:41",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 63.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "fdslfsdf5000000000000",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\100mo - Copie - Copie - Copie (5).txt",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\100mo - Copie - Copie - Copie (5).txt",
+    "timestamp": "2023-12-23 10:27:41",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 64.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "fdslfsdf5000000000000",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\100mo - Copie - Copie - Copie (10).txt",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\100mo - Copie - Copie - Copie (10).txt",
+    "timestamp": "2023-12-23 10:27:41",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 63.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "fdslfsdf5000000000000",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\100mo - Copie - Copie - Copie (7).txt",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\100mo - Copie - Copie - Copie (7).txt",
+    "timestamp": "2023-12-23 10:27:41",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 61.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "fdslfsdf5000000000000",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\Livrable2_G5_Administrtion_SI .docx",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\Livrable2_G5_Administrtion_SI .docx",
+    "timestamp": "2023-12-23 10:27:41",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 63.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "fdslfsdf5000000000000",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\100mo - Copie - Copie - Copie (9).txt",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\100mo - Copie - Copie - Copie (9).txt",
+    "timestamp": "2023-12-23 10:27:41",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 51.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "fdslfsdf5000000000000",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\100mo - Copie - Copie.txt",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\100mo - Copie - Copie.txt",
+    "timestamp": "2023-12-23 10:27:41",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 59.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "fdslfsdf5000000000000",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\100mo - Copie - Copie - Copie.txt",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\100mo - Copie - Copie - Copie.txt",
+    "timestamp": "2023-12-23 10:27:41",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 58.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "fdslfsdf5000000000000",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\centreon-vbox-vm-23_10-1.el8.ova",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\centreon-vbox-vm-23_10-1.el8.ova",
+    "timestamp": "2023-12-23 10:27:41",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 66.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "fdslfsdf5000000000000",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\Rapport de stage Talaoubrid Minel A2.pdf",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\Rapport de stage Talaoubrid Minel A2.pdf",
+    "timestamp": "2023-12-23 10:27:42",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 35.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "fdslfsdf5000000000000",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\uhcru.pdf",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\uhcru.pdf",
+    "timestamp": "2023-12-23 10:27:42",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 64.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "fdslfsdf5000000000000",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\100mo - Copie - Copie - Copie (11).txt",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\100mo - Copie - Copie - Copie (11).txt",
+    "timestamp": "2023-12-23 10:27:42",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 63.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "fdslfsdf5000000000000",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\100mo - Copie - Copie - Copie (3).txt",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\100mo - Copie - Copie - Copie (3).txt",
+    "timestamp": "2023-12-23 10:27:42",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 51.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "fdslfsdf5000000000000fdsfsdfsdfsdf",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\100mo - Copie - Copie.txt",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\100mo - Copie - Copie.txt",
+    "timestamp": "2023-12-23 10:28:52",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 61.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "fdslfsdf5000000000000fdsfsdfsdfsdf",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\Livrable2_G5_Administrtion_SI .docx",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\Livrable2_G5_Administrtion_SI .docx",
+    "timestamp": "2023-12-23 10:28:52",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 58.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "fdslfsdf5000000000000fdsfsdfsdfsdf",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\centreon-vbox-vm-23_10-1.el8.ova",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\centreon-vbox-vm-23_10-1.el8.ova",
+    "timestamp": "2023-12-23 10:28:55",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 40.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "fdslfsdf5000000000000fdsfsdfsdfsdf",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\3 for each.txt",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\3 for each.txt",
+    "timestamp": "2023-12-23 10:28:55",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 66.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "fdslfsdf5000000000000fdsfsdfsdfsdf",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\Rapport de stage Talaoubrid Minel A2.pdf",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\Rapport de stage Talaoubrid Minel A2.pdf",
+    "timestamp": "2023-12-23 10:28:55",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 60.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "fdslfsdf5000000000000fdsfsdfsdfsdf",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\Livrable3_G5_Administrtion_SI.docx",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\Livrable3_G5_Administrtion_SI.docx",
+    "timestamp": "2023-12-23 10:28:55",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 35.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "fdslfsdf5000000000000fdsfsdfsdfsdf",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\uhcru.pdf",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\uhcru.pdf",
+    "timestamp": "2023-12-23 10:28:55",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 51.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "fdslfsdf5000000000000fdsfsdfsdfsdf",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\100mo - Copie - Copie.txt",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\100mo - Copie - Copie.txt",
+    "timestamp": "2023-12-23 10:29:32",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 58.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "fdslfsdf5000000000000fdsfsdfsdfsdf",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\centreon-vbox-vm-23_10-1.el8.ova",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\centreon-vbox-vm-23_10-1.el8.ova",
+    "timestamp": "2023-12-23 10:29:33",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 40.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "fdslfsdf5000000000000fdsfsdfsdfsdf",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\3 for each.txt",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\3 for each.txt",
+    "timestamp": "2023-12-23 10:29:33",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 61.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "fdslfsdf5000000000000fdsfsdfsdfsdf",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\Livrable2_G5_Administrtion_SI .docx",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\Livrable2_G5_Administrtion_SI .docx",
+    "timestamp": "2023-12-23 10:29:33",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 60.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "fdslfsdf5000000000000fdsfsdfsdfsdf",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\Livrable3_G5_Administrtion_SI.docx",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\Livrable3_G5_Administrtion_SI.docx",
+    "timestamp": "2023-12-23 10:29:33",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 66.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "fdslfsdf5000000000000fdsfsdfsdfsdf",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\Rapport de stage Talaoubrid Minel A2.pdf",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\Rapport de stage Talaoubrid Minel A2.pdf",
+    "timestamp": "2023-12-23 10:29:33",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 35.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "fdslfsdf5000000000000fdsfsdfsdfsdf",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\uhcru.pdf",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\uhcru.pdf",
+    "timestamp": "2023-12-23 10:29:33",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 61.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "fdslfsdf5000000000000fdsfsdfsdfsdf",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\Livrable2_G5_Administrtion_SI .docx",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\Livrable2_G5_Administrtion_SI .docx",
+    "timestamp": "2023-12-23 10:31:03",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 58.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "fdslfsdf5000000000000fdsfsdfsdfsdf",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\centreon-vbox-vm-23_10-1.el8.ova",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\centreon-vbox-vm-23_10-1.el8.ova",
+    "timestamp": "2023-12-23 10:31:06",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 40.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "fdslfsdf5000000000000fdsfsdfsdfsdf",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\3 for each.txt",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\3 for each.txt",
+    "timestamp": "2023-12-23 10:31:06",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 51.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "fdslfsdf5000000000000fdsfsdfsdfsdf",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\100mo - Copie - Copie.txt",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\100mo - Copie - Copie.txt",
+    "timestamp": "2023-12-23 10:31:06",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 60.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "fdslfsdf5000000000000fdsfsdfsdfsdf",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\Livrable3_G5_Administrtion_SI.docx",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\Livrable3_G5_Administrtion_SI.docx",
+    "timestamp": "2023-12-23 10:31:06",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 66.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "fdslfsdf5000000000000fdsfsdfsdfsdf",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\Rapport de stage Talaoubrid Minel A2.pdf",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\Rapport de stage Talaoubrid Minel A2.pdf",
+    "timestamp": "2023-12-23 10:31:06",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 35.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "fdslfsdf5000000000000fdsfsdfsdfsdf",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\uhcru.pdf",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\uhcru.pdf",
+    "timestamp": "2023-12-23 10:31:07",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 51.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "fdslfsdf5000000000000fdsfsdfsdfsdf",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\100mo - Copie - Copie.txt",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\100mo - Copie - Copie.txt",
+    "timestamp": "2023-12-23 10:33:29",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 40.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "fdslfsdf5000000000000fdsfsdfsdfsdf",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\3 for each.txt",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\3 for each.txt",
+    "timestamp": "2023-12-23 10:33:29",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 61.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "fdslfsdf5000000000000fdsfsdfsdfsdf",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\Livrable2_G5_Administrtion_SI .docx",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\Livrable2_G5_Administrtion_SI .docx",
+    "timestamp": "2023-12-23 10:33:29",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 58.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "fdslfsdf5000000000000fdsfsdfsdfsdf",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\centreon-vbox-vm-23_10-1.el8.ova",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\centreon-vbox-vm-23_10-1.el8.ova",
+    "timestamp": "2023-12-23 10:33:29",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 60.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "fdslfsdf5000000000000fdsfsdfsdfsdf",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\Livrable3_G5_Administrtion_SI.docx",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\Livrable3_G5_Administrtion_SI.docx",
+    "timestamp": "2023-12-23 10:33:29",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 66.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "fdslfsdf5000000000000fdsfsdfsdfsdf",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\Rapport de stage Talaoubrid Minel A2.pdf",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\Rapport de stage Talaoubrid Minel A2.pdf",
+    "timestamp": "2023-12-23 10:33:29",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 35.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "fdslfsdf5000000000000fdsfsdfsdfsdf",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\uhcru.pdf",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\uhcru.pdf",
+    "timestamp": "2023-12-23 10:33:29",
+    "type": "2",
+    "logFileType": null
+  }
 ]
