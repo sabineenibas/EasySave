@@ -1,1 +1,38 @@
-[ {"IsSelected":false,"backupName":"sssssssssss","destinationPath":"C:\\Users\\Pcnet\\Desktop\\cc2","sourcePath":"C:\\Users\\Pcnet\\Desktop\\cc","timestamp":"2023-12-23 09:00:02","type":"2","logFileType":"1"}, {"IsSelected":false,"backupName":"","destinationPath":"","sourcePath":"","timestamp":"2023-12-23 09:55:04","type":"1","logFileType":"2"}, {"IsSelected":false,"backupName":"fdslfsdf5000000000000","destinationPath":"C:\\Users\\Pcnet\\Desktop\\cc2","sourcePath":"C:\\Users\\Pcnet\\Desktop\\cc","timestamp":"2023-12-23 10:27:32","type":"2","logFileType":"1"}, {"IsSelected":false,"backupName":"fdslfsdf5000000000000fdsfsdfsdfsdf","destinationPath":"C:\\Users\\Pcnet\\Desktop\\cc2","sourcePath":"C:\\Users\\Pcnet\\Desktop\\cc","timestamp":"2023-12-23 10:28:49","type":"2","logFileType":"1"}]
+[
+  {
+    "IsSelected": false,
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc",
+    "timestamp": "2023-12-23 09:00:02",
+    "type": "2",
+    "logFileType": "1"
+  },
+  {
+    "IsSelected": false,
+    "backupName": "",
+    "destinationPath": "",
+    "sourcePath": "",
+    "timestamp": "2023-12-23 09:55:04",
+    "type": "1",
+    "logFileType": "2"
+  },
+  {
+    "IsSelected": false,
+    "backupName": "fdslfsdf5000000000000",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc",
+    "timestamp": "2023-12-23 10:27:32",
+    "type": "2",
+    "logFileType": "1"
+  },
+  {
+    "IsSelected": false,
+    "backupName": "fdslfsdf5000000000000fdsfsdfsdfsdf",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc",
+    "timestamp": "2023-12-23 10:28:49",
+    "type": "2",
+    "logFileType": "1"
+  }
+]

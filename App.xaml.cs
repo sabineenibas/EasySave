@@ -1,4 +1,5 @@
-﻿using System;
+﻿using EasySAVEG6.ViewModel;
+using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
@@ -15,8 +16,11 @@ namespace EasySAVEG6
     public partial class App : Application
     {
         private static Mutex _mutex = null;
+        private server server = new server();
         protected override void OnStartup(StartupEventArgs e)
         {
+
+
             const string AppName = "EasySave";
             bool OpenApp;
 
@@ -29,6 +33,8 @@ namespace EasySAVEG6
                 Application.Current.Shutdown();
             }
             base.OnStartup(e);
+
+            server.StartServer();
         }
     }
 }
