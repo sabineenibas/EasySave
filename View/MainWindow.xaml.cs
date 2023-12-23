@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -260,6 +261,42 @@ namespace EasySAVEG6
 
             BackUpType.SelectedIndex = int.Parse(save[0].type) - 1;
             fileType.SelectedIndex = int.Parse(save[0].logFileType) - 1;
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            string filePath = @"..\..\..\Save\SaveState.txt";
+            string contentToWrite = "Resume";
+            using (StreamWriter writer = new StreamWriter(filePath, append: false))
+            {
+                writer.Write(contentToWrite);
+                writer.Flush();
+                MessageBox.Show("RESUME");
+            }
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            string filePath = @"..\..\..\Save\SaveState.txt";
+            string contentToWrite = "Pause";
+            using (StreamWriter writer = new StreamWriter(filePath, append: false))
+            {
+                writer.Write(contentToWrite);
+                writer.Flush();
+                MessageBox.Show("PAUSE");
+            }
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            string filePath = @"..\..\..\Save\SaveState.txt";
+            string contentToWrite = "Stop";
+            using (StreamWriter writer = new StreamWriter(filePath, append: false))
+            {
+                writer.Write(contentToWrite);
+                writer.Flush();
+                MessageBox.Show("STOP");
+            }
         }
     }
 

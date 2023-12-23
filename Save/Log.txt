@@ -972,4 +972,114 @@
     "type": "2",
     "logFileType": null
   }
+, 
+  {
+    "fileSize": 60.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\Livrable3_G5_Administrtion_SI.docx",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\Livrable3_G5_Administrtion_SI.docx",
+    "timestamp": "2023-12-23 09:09:45",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 66.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\Rapport de stage Talaoubrid Minel A2.pdf",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\Rapport de stage Talaoubrid Minel A2.pdf",
+    "timestamp": "2023-12-23 09:09:45",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 61.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\Livrable2_G5_Administrtion_SI .docx",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\Livrable2_G5_Administrtion_SI .docx",
+    "timestamp": "2023-12-23 09:09:45",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 58.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\centreon-vbox-vm-23_10-1.el8.ova",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\centreon-vbox-vm-23_10-1.el8.ova",
+    "timestamp": "2023-12-23 09:09:49",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 35.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\uhcru.pdf",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\uhcru.pdf",
+    "timestamp": "2023-12-23 09:09:50",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 60.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\Livrable3_G5_Administrtion_SI.docx",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\Livrable3_G5_Administrtion_SI.docx",
+    "timestamp": "2023-12-23 09:20:01",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 66.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\Rapport de stage Talaoubrid Minel A2.pdf",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\Rapport de stage Talaoubrid Minel A2.pdf",
+    "timestamp": "2023-12-23 09:20:02",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 61.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\Livrable2_G5_Administrtion_SI .docx",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\Livrable2_G5_Administrtion_SI .docx",
+    "timestamp": "2023-12-23 09:20:02",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 58.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\centreon-vbox-vm-23_10-1.el8.ova",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\centreon-vbox-vm-23_10-1.el8.ova",
+    "timestamp": "2023-12-23 09:20:02",
+    "type": "2",
+    "logFileType": null
+  }
+, 
+  {
+    "fileSize": 35.0,
+    "timeTrensfertFile": "00:00:00",
+    "backupName": "sssssssssss",
+    "destinationPath": "C:\\Users\\Pcnet\\Desktop\\cc2\\uhcru.pdf",
+    "sourcePath": "C:\\Users\\Pcnet\\Desktop\\cc\\uhcru.pdf",
+    "timestamp": "2023-12-23 09:20:02",
+    "type": "2",
+    "logFileType": null
+  }
 ]

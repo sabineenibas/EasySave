@@ -302,11 +302,11 @@
     <!--// Maximize / Minimize App Button Style //-->
 
     <ImageBrush x:Key="max_def"
-                ImageSource="C:\Users\Pcnet\source\repos\EasySaveeee\Assets\max_mo.png"
+                ImageSource="C:\Users\Pcnet\Downloads\latest\latest\Assets\max_mo.png"
                 Stretch="None"/>
 
     <ImageBrush x:Key="max_mo"
-                ImageSource="C:\Users\Pcnet\source\repos\EasySaveeee\Assets\max_mo.png"
+                ImageSource="C:\Users\Pcnet\Downloads\latest\latest\Assets\max_mo.png"
                 Stretch="None"/>
 
     <Style x:Key="MaxBtnStyle"
@@ -368,11 +368,11 @@
     <!--// Close App Button Style //-->
 
     <ImageBrush x:Key="close_def"
-                ImageSource="C:\Users\Pcnet\source\repos\EasySaveeee\Assets\shutdown_def.png"
+                ImageSource="C:\Users\Pcnet\Downloads\latest\latest\Assets\shutdown_def.png"
                 Stretch="None" />
 
     <ImageBrush x:Key="close_mo"
-                ImageSource="C:\Users\Pcnet\source\repos\EasySaveeee\Assets\shutdown_mo.png"
+                ImageSource="C:\Users\Pcnet\Downloads\latest\latest\Assets\shutdown_mo.png"
                 Stretch="None" />
 
     <Style x:Key="CloseBtnStyle"

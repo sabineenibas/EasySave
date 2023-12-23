@@ -74,6 +74,9 @@ namespace EasySaveG6.ViewModel
             fileC.destinationPath = destinationPath;
             fileC.type = type;
             fileC.logFileType = logFileType;
+            string pr;
+            string[] prioritaires;
+            string prs;
 
             try
             {
@@ -81,6 +84,31 @@ namespace EasySaveG6.ViewModel
 
                 Parallel.ForEach(files, file =>
                 {
+                    lock (lockObject)
+                    {
+                        string prs = System.IO.File.ReadAllText(@"..\..\..\Save\SaveState.txt");
+                        if (prs.Equals("Stop", StringComparison.OrdinalIgnoreCase))
+                        {
+                            return;
+                        } while (prs.Equals("Pause", StringComparison.OrdinalIgnoreCase))
+                        {
+                            try
+                            {
+                                prs = System.IO.File.ReadAllText(@"..\..\..\Save\SaveState.txt");
+                                if (prs.Equals("Pause", StringComparison.OrdinalIgnoreCase))
+                                {
+                                    break;
+                                }
+                            }
+                            catch (IOException)
+                            {
+                                // File is locked, waiting for a bit
+                                Thread.Sleep(100);
+                            }
+                        }
+
+
+                    }
                     if (IsCalculatorRunning())
                     {
                         while (IsCalculatorRunning())
@@ -89,8 +117,7 @@ namespace EasySaveG6.ViewModel
                         }
                     }
 
-                    string pr;
-                    string[] prioritaires;
+
                     lock (lockObject)
                     {
                         pr = System.IO.File.ReadAllText(@"..\..\..\Save\prioritaire.txt"); // Use ReadAllText to get the content of the file
@@ -102,9 +129,41 @@ namespace EasySaveG6.ViewModel
                     {
                         for (int ext = 0; ext < prioritaires.Length; ext++)
                         {
+                            while (true)
+                            {
+                                try
+                                {
+                                    prs = System.IO.File.ReadAllText(@"..\..\..\Save\SaveState.txt");
+                                    break;
+                                }
+                                catch (IOException)
+                                {
+                                    // File is locked, waiting for a bit
+                                    Thread.Sleep(100);
+                                }
+
+                            }
+                            if (prs.Equals("Stop", StringComparison.OrdinalIgnoreCase))
+                            {
+                                return;
+                            } while (prs.Equals("Pause", StringComparison.OrdinalIgnoreCase)){
+                                try
+                                {
+                                    prs = System.IO.File.ReadAllText(@"..\..\..\Save\SaveState.txt");
+                                    if (prs.Equals("Pause", StringComparison.OrdinalIgnoreCase))
+                                    {
+                                        break;
+                                    }
+                                }
+                                catch (IOException)
+                                {
+                                    // File is locked, waiting for a bit
+                                    Thread.Sleep(100);
+                                }
+                            }
                             if (fileExtension == prioritaires[ext])
                             {
-                                if (new FileInfo(file).Length < 10 * 1024 * 1024)
+                                if (new FileInfo(file).Length < 2000 * 1024 * 1024)
                                 {
                                     Encrypt(sourcePath, destinationPath);
                                     System.IO.File.Copy(file, Path.Combine(destinationPath, Path.GetFileName(file)), true);
@@ -113,9 +172,41 @@ namespace EasySaveG6.ViewModel
                         }
                         for (int ext = 0; ext < prioritaires.Length; ext++)
                         {
+                            while (true)
+                            {
+                                try
+                                {
+                                    prs = System.IO.File.ReadAllText(@"..\..\..\Save\SaveState.txt");
+                                    break;
+                                }
+                                catch (IOException)
+                                {
+                                    // File is locked, waiting for a bit
+                                    Thread.Sleep(100);
+                                }
+
+                            }
+                            if (prs.Equals("Stop", StringComparison.OrdinalIgnoreCase))
+                            {
+                                return;
+                            } while (prs.Equals("Pause", StringComparison.OrdinalIgnoreCase)) {
+                                try
+                                {
+                                    prs = System.IO.File.ReadAllText(@"..\..\..\Save\SaveState.txt");
+                                    if (prs.Equals("Pause", StringComparison.OrdinalIgnoreCase))
+                                    {
+                                        break;
+                                    }
+                                }
+                                catch (IOException)
+                                {
+                                    // File is locked, waiting for a bit
+                                    Thread.Sleep(100);
+                                }
+                            }
                             if (fileExtension != prioritaires[ext])
                             {
-                                if (new FileInfo(file).Length < 10 * 1024 * 1024)
+                                if (new FileInfo(file).Length < 2000 * 1024 * 1024)
                                 {
                                     Encrypt(sourcePath, destinationPath);
                                     System.IO.File.Copy(file, Path.Combine(destinationPath, Path.GetFileName(file)), true);
@@ -168,6 +259,9 @@ namespace EasySaveG6.ViewModel
             fileC.type = type;
             fileC.logFileType = logFileType;
             EasySaveG6.Model.File fileS = new Status(@"..\..\..\Save\Status.txt");
+            string pr;
+            string[] prioritaires;
+            string prs;
 
             try
             {
@@ -175,6 +269,28 @@ namespace EasySaveG6.ViewModel
 
                 Parallel.ForEach(files, file =>
                 {
+                    lock (lockObject)
+                    {
+                        while (true)
+                        {
+                            try
+                            {
+                                prs = System.IO.File.ReadAllText(@"..\..\..\Save\SaveState.txt");
+                                break;
+                            }
+                            catch (IOException)
+                            {
+                                // File is locked, waiting for a bit
+                                Thread.Sleep(100);
+                            }
+
+                        }
+                        if (prs.Equals("Stop", StringComparison.OrdinalIgnoreCase))
+                        {
+                            return;
+                        } while (prs.Equals("Pause", StringComparison.OrdinalIgnoreCase)) { }
+
+                    }
                     if (IsCalculatorRunning())
                     {
                         while (IsCalculatorRunning())
@@ -190,8 +306,8 @@ namespace EasySaveG6.ViewModel
 
                         try
                         {
-                            string pr;
-                            string[] prioritaires;
+
+
                             lock (lockObject)
                             {
                                 pr = System.IO.File.ReadAllText(@"..\..\..\Save\prioritaire.txt"); // Use ReadAllText to get the content of the file
@@ -204,9 +320,41 @@ namespace EasySaveG6.ViewModel
                             {
                                 for (int ext = 0; ext < prioritaires.Length; ext++)
                                 {
+                                    while (true)
+                                    {
+                                        try
+                                        {
+                                            prs = System.IO.File.ReadAllText(@"..\..\..\Save\SaveState.txt");
+                                            break;
+                                        }
+                                        catch (IOException)
+                                        {
+                                            // File is locked, waiting for a bit
+                                            Thread.Sleep(100);
+                                        }
+
+                                    }
+                                    if (prs.Equals("Stop", StringComparison.OrdinalIgnoreCase))
+                                    {
+                                        return;
+                                    } while (prs.Equals("Pause", StringComparison.OrdinalIgnoreCase)) {
+                                        try
+                                        {
+                                            prs = System.IO.File.ReadAllText(@"..\..\..\Save\SaveState.txt");
+                                            if (prs.Equals("Pause", StringComparison.OrdinalIgnoreCase))
+                                            {
+                                                break;
+                                            }
+                                        }
+                                        catch (IOException)
+                                        {
+                                            // File is locked, waiting for a bit
+                                            Thread.Sleep(100);
+                                        }
+                                    }
                                     if (fileExtension == prioritaires[ext])
                                     {
-                                        if (new FileInfo(file).Length < 10 * 1024 * 1024)
+                                        if (new FileInfo(file).Length < 2000 * 1024 * 1024)
                                         {
                                             Encrypt(sourcePath, destinationPath);
                                             System.IO.File.Copy(file, Path.Combine(destinationPath, Path.GetFileName(file)));
@@ -215,9 +363,41 @@ namespace EasySaveG6.ViewModel
                                 }
                                 for (int ext = 0; ext < prioritaires.Length; ext++)
                                 {
+                                    while (true)
+                                    {
+                                        try
+                                        {
+                                            prs = System.IO.File.ReadAllText(@"..\..\..\Save\SaveState.txt");
+                                            break;
+                                        }
+                                        catch (IOException)
+                                        {
+                                            // File is locked, waiting for a bit
+                                            Thread.Sleep(100);
+                                        }
+
+                                    }
+                                    if (prs.Equals("Stop", StringComparison.OrdinalIgnoreCase))
+                                    {
+                                        return;
+                                    } while (prs.Equals("Pause", StringComparison.OrdinalIgnoreCase)) {
+                                        try
+                                        {
+                                            prs = System.IO.File.ReadAllText(@"..\..\..\Save\SaveState.txt");
+                                            if (prs.Equals("Pause", StringComparison.OrdinalIgnoreCase))
+                                            {
+                                                break;
+                                            }
+                                        }
+                                        catch (IOException)
+                                        {
+                                            // File is locked, waiting for a bit
+                                            Thread.Sleep(100);
+                                        }
+                                    }
                                     if (fileExtension != prioritaires[ext])
                                     {
-                                        if (new FileInfo(file).Length < 10 * 1024 * 1024)
+                                        if (new FileInfo(file).Length < 2000 * 1024 * 1024)
                                         {
                                             Encrypt(sourcePath, destinationPath);
                                             System.IO.File.Copy(file, Path.Combine(destinationPath, Path.GetFileName(file)));
@@ -257,9 +437,41 @@ namespace EasySaveG6.ViewModel
                                 {
                                     for (int ext = 0; ext < prioritaires.Length; ext++)
                                     {
+                                        while (true)
+                                        {
+                                            try
+                                            {
+                                                prs = System.IO.File.ReadAllText(@"..\..\..\Save\SaveState.txt");
+                                                break;
+                                            }
+                                            catch (IOException)
+                                            {
+                                                // File is locked, waiting for a bit
+                                                Thread.Sleep(100);
+                                            }
+
+                                        }
+                                        if (prs.Equals("Stop", StringComparison.OrdinalIgnoreCase))
+                                        {
+                                            return;
+                                        } while (prs.Equals("Pause", StringComparison.OrdinalIgnoreCase)) {
+                                            try
+                                            {
+                                                prs = System.IO.File.ReadAllText(@"..\..\..\Save\SaveState.txt");
+                                                if (prs.Equals("Pause", StringComparison.OrdinalIgnoreCase))
+                                                {
+                                                    break;
+                                                }
+                                            }
+                                            catch (IOException)
+                                            {
+                                                // File is locked, waiting for a bit
+                                                Thread.Sleep(100);
+                                            }
+                                        }
                                         if (fileExtension == prioritaires[ext])
                                         {
-                                            if (new FileInfo(file).Length < 10 * 1024 * 1024)
+                                            if (new FileInfo(file).Length < 2000 * 1024 * 1024)
                                             {
                                                 Encrypt(sourcePath, destinationPath);
                                                 System.IO.File.Copy(file, Path.Combine(destinationPath, Path.GetFileName(file)), true);
@@ -268,9 +480,26 @@ namespace EasySaveG6.ViewModel
                                     }
                                     for (int ext = 0; ext < prioritaires.Length; ext++)
                                     {
+                                        prs = System.IO.File.ReadAllText(@"..\..\..\Save\SaveState.txt");
+                                        if (prs.Equals("Stop", StringComparison.OrdinalIgnoreCase))
+                                        {
+                                            return;
+                                        }                        while (prs.Equals("Pause", StringComparison.OrdinalIgnoreCase))
+                        {
+                            try
+                            {
+                                prs = System.IO.File.ReadAllText(@"..\..\..\Save\SaveState.txt");
+                            }
+                            catch (IOException)
+                            {
+                                // File is locked, waiting for a bit
+                                Thread.Sleep(100);
+                            }
+                            
+                        }
                                         if (fileExtension != prioritaires[ext])
                                         {
-                                            if (new FileInfo(file).Length < 10 * 1024 * 1024)
+                                            if (new FileInfo(file).Length < 2000 * 1024 * 1024)
                                             {
                                                 Encrypt(sourcePath, destinationPath);
                                                 System.IO.File.Copy(file, Path.Combine(destinationPath, Path.GetFileName(file)), true);

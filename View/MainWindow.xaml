@@ -178,17 +178,17 @@
         </ComboBox>
         <Label Name="Sauvegardes"  HorizontalAlignment="Left" Height="46" Margin="288,297,0,0" VerticalAlignment="Top" Width="200" Foreground="White" Content="Sauvegardes" FontSize="15" Grid.ColumnSpan="2"/>
         <Label Name="Commentaire"  HorizontalAlignment="Left" Height="46" Margin="288,529,0,0" VerticalAlignment="Top" Width="200" Foreground="White" Content="Commentaire" FontSize="15" Grid.ColumnSpan="2"/>
-        <Button Content="" HorizontalAlignment="Left" Margin="34,232,0,0" VerticalAlignment="Top" Height="57" Width="76" BorderBrush="{x:Null}" Grid.Column="1">
+        <Button Content="" HorizontalAlignment="Left" Margin="34,232,0,0" VerticalAlignment="Top" Height="57" Width="76" BorderBrush="{x:Null}" Grid.Column="1" Click="Button_Click">
             <Button.Background>
                 <ImageBrush ImageSource="/View/icons8-play-94.png"/>
             </Button.Background>
         </Button>
-        <Button Content="" Margin="0,232,310,0" VerticalAlignment="Top" Height="57" Grid.Column="1" BorderBrush="{x:Null}" HorizontalAlignment="Right" Width="76">
+        <Button Content="" Margin="0,232,310,0" VerticalAlignment="Top" Height="57" Grid.Column="1" BorderBrush="{x:Null}" HorizontalAlignment="Right" Width="76" Click="Button_Click_1">
             <Button.Background>
                 <ImageBrush ImageSource="/View/icons8-pause-48.png"/>
             </Button.Background>
         </Button>
-        <Button Content="" HorizontalAlignment="Left" Margin="185,231,0,0" VerticalAlignment="Top" Height="57" Width="76" Grid.Column="1" BorderBrush="{x:Null}">
+        <Button Content="" HorizontalAlignment="Left" Margin="185,231,0,0" VerticalAlignment="Top" Height="57" Width="76" Grid.Column="1" BorderBrush="{x:Null}" Click="Button_Click_2">
             <Button.Background>
                 <ImageBrush ImageSource="/View/icons8-stop-48.png"/>
             </Button.Background>
